@@ -14,55 +14,93 @@
   overlay.setAttribute('aria-hidden', 'true');
   overlay.setAttribute('role', 'dialog');
   overlay.setAttribute('aria-modal', 'true');
-  overlay.setAttribute('aria-label', 'Book a Free Strategy Call');
+  overlay.setAttribute('aria-label', 'Schedule a Free Strategy Call');
   overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:1rem;background:rgba(0,0,0,0);transition:background 0.3s ease;overflow-y:auto;';
+
+  // Inject responsive style for hiding image on mobile
+  var modalStyle = document.createElement('style');
+  modalStyle.textContent = '@media(max-width:767px){#strategy-modal-image{display:none!important}#strategy-modal-body{grid-template-columns:1fr!important}#strategy-modal-mobile-header{display:block!important}#strategy-modal-close{background:rgba(0,0,0,0.5)!important}}';
+  document.head.appendChild(modalStyle);
 
   overlay.innerHTML =
     '<div id="strategy-modal-content" style="' +
       'background:#fff;' +
       'border-radius:1rem;' +
       'width:100%;' +
-      'max-width:540px;' +
+      'max-width:920px;' +
       'max-height:90vh;' +
-      'overflow-y:auto;' +
+      'overflow:hidden;' +
       'box-shadow:0 25px 50px rgba(0,0,0,0.25);' +
       'transform:scale(0.95) translateY(10px);' +
       'opacity:0;' +
       'transition:transform 0.3s ease,opacity 0.3s ease;' +
       'position:relative;' +
     '">' +
-      // Header
-      '<div style="' +
-        'background:var(--color-brand-dark-green,#395659);' +
-        'padding:1.5rem 2rem;' +
-        'border-radius:1rem 1rem 0 0;' +
+      // Green bar at top
+      '<div style="height:10px;background:var(--color-brand-dark-green,#395659);border-radius:1rem 1rem 0 0;"></div>' +
+      // Close button (absolute positioned)
+      '<button id="strategy-modal-close" aria-label="Close modal" style="' +
+        'position:absolute;' +
+        'top:0.75rem;' +
+        'right:0.75rem;' +
+        'z-index:10;' +
+        'background:rgba(0,0,0,0.3);' +
+        'border:none;' +
+        'color:#fff;' +
+        'font-size:1.5rem;' +
+        'cursor:pointer;' +
+        'width:2rem;' +
+        'height:2rem;' +
+        'border-radius:50%;' +
         'display:flex;' +
-        'justify-content:space-between;' +
-        'align-items:flex-start;' +
-        'gap:1rem;' +
+        'align-items:center;' +
+        'justify-content:center;' +
+        'line-height:1;' +
+        'opacity:0.8;' +
+        'transition:opacity 0.2s,background 0.2s;' +
+      '">&times;</button>' +
+      // Two-column body
+      '<div id="strategy-modal-body" style="' +
+        'display:grid;' +
+        'grid-template-columns:2fr 3fr;' +
+        'min-height:500px;' +
       '">' +
-        '<div>' +
-          '<h2 style="color:#fff;font-size:1.5rem;font-weight:700;margin:0;font-family:var(--font-heading,DM Sans,system-ui,sans-serif);line-height:1.2;">Book Your Free Strategy Call</h2>' +
-          '<p style="color:var(--color-brand-light-green,#bad9d9);font-size:0.875rem;margin:0.375rem 0 0;font-family:var(--font-body,Inter,system-ui,sans-serif);">30 minutes. No pressure. Just honest guidance.</p>' +
+        // Left: Image column
+        '<div id="strategy-modal-image" style="' +
+          'background-image:url(/joceyj-website/utah-houses.jpg);' +
+          'background-size:cover;' +
+          'background-position:center;' +
+          'position:relative;' +
+          'display:flex;' +
+          'flex-direction:column;' +
+          'justify-content:flex-start;' +
+        '">' +
+          // Dark overlay gradient (top to bottom)
+          '<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(57,86,89,0.9) 0%,rgba(57,86,89,0.3) 50%,rgba(57,86,89,0.05) 100%);"></div>' +
+          // Text over image (at top)
+          '<div style="position:relative;padding:2rem;">' +
+            '<h2 style="color:#fff;font-size:1.5rem;font-weight:700;margin:0 0 0.5rem;font-family:var(--font-heading,DM Sans,system-ui,sans-serif);line-height:1.2;">Schedule a Free Strategy Call</h2>' +
+            '<p style="color:var(--color-brand-light-green,#bad9d9);font-size:0.875rem;margin:0;font-family:var(--font-body,Inter,system-ui,sans-serif);line-height:1.5;">30 minutes with a local Utah real estate expert. No pressure, just honest guidance.</p>' +
+          '</div>' +
         '</div>' +
-        '<button id="strategy-modal-close" aria-label="Close modal" style="' +
-          'background:none;' +
-          'border:none;' +
-          'color:#fff;' +
-          'font-size:1.75rem;' +
-          'cursor:pointer;' +
-          'padding:0.25rem 0.5rem;' +
-          'line-height:1;' +
-          'opacity:0.7;' +
-          'transition:opacity 0.2s;' +
-          'flex-shrink:0;' +
-        '">&times;</button>' +
-      '</div>' +
-      // Orange accent bar
-      '<div style="height:4px;background:var(--color-brand-orange,#f2bb77);"></div>' +
-      // Form container
-      '<div id="strategy-modal-form" style="padding:0;min-height:400px;display:flex;align-items:center;justify-content:center;">' +
-        '<p style="color:#999;font-size:0.875rem;">Loading form...</p>' +
+        // Right: Form column
+        '<div style="overflow-y:auto;max-height:90vh;">' +
+          // Mobile-only header (visible when image is hidden)
+          '<div id="strategy-modal-mobile-header" style="' +
+            'background:var(--color-brand-dark-green,#395659);' +
+            'padding:1.25rem 1.5rem;' +
+            'display:none;' +
+          '">' +
+            '<h2 style="color:#fff;font-size:1.25rem;font-weight:700;margin:0;font-family:var(--font-heading,DM Sans,system-ui,sans-serif);">Schedule a Free Strategy Call</h2>' +
+            '<p style="color:var(--color-brand-light-green,#bad9d9);font-size:0.8rem;margin:0.25rem 0 0;">30 minutes. No pressure. Just honest guidance.</p>' +
+          '</div>' +
+          // Orange accent bar
+          '<div style="height:3px;background:var(--color-brand-orange,#f2bb77);"></div>' +
+          // Form
+          '<div id="strategy-modal-form" style="padding:0;min-height:400px;display:flex;align-items:center;justify-content:center;">' +
+            '<p style="color:#999;font-size:0.875rem;">Loading form...</p>' +
+          '</div>' +
+        '</div>' +
       '</div>' +
     '</div>';
 
@@ -73,8 +111,8 @@
   var formContainer = document.getElementById('strategy-modal-form');
 
   // Hover effect on close button
-  closeBtn.addEventListener('mouseenter', function() { closeBtn.style.opacity = '1'; });
-  closeBtn.addEventListener('mouseleave', function() { closeBtn.style.opacity = '0.7'; });
+  closeBtn.addEventListener('mouseenter', function() { closeBtn.style.opacity = '1'; closeBtn.style.background = 'rgba(0,0,0,0.5)'; });
+  closeBtn.addEventListener('mouseleave', function() { closeBtn.style.opacity = '0.8'; closeBtn.style.background = 'rgba(0,0,0,0.3)'; });
 
   function loadIframe() {
     if (iframeLoaded) return;
