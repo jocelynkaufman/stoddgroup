@@ -95,7 +95,7 @@
             '<p style="color:var(--color-brand-light-green,#bad9d9);font-size:0.8rem;margin:0.25rem 0 0;">30 minutes. No pressure. Just honest guidance.</p>' +
           '</div>' +
           // Orange accent bar
-          '<div style="height:3px;background:var(--color-brand-orange,#f2bb77);"></div>' +
+          '<div style="height:3px;background:var(--color-brand-orange,#E8A87C);"></div>' +
           // Form
           '<div id="strategy-modal-form" style="padding:0;min-height:400px;display:flex;align-items:center;justify-content:center;">' +
             '<p style="color:#999;font-size:0.875rem;">Loading form...</p>' +
