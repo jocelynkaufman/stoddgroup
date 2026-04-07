@@ -67,7 +67,7 @@
       '">' +
         // Left: Image column
         '<div id="strategy-modal-image" style="' +
-          'background-image:url(/joceyj-website/utah-houses.jpg);' +
+          'background-image:url(/stoddgroup/utah-houses.jpg);' +
           'background-size:cover;' +
           'background-position:center;' +
           'position:relative;' +
@@ -122,7 +122,7 @@
       'style="border:none;width:100%;min-height:500px;" ' +
       'scrolling="no" ' +
       'id="Kms3TYnxLwXtHW1cU1sB" ' +
-      'title="Realtor Interest Form - joceyj.com">' +
+      'title="Realtor Interest Form - stoddgroup.com">' +
       '</iframe>';
   }
 
