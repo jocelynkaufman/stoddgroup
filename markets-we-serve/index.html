@@ -7,35 +7,106 @@ Free Strategy Call
 <main>
 
 <!-- Hero -->
-<section class="relative py-20 md:py-32 bg-gradient-to-br from-brand-dark-green to-brand-green overflow-hidden">
+<section class="relative py-20 md:py-32 bg-gradient-to-br from-brand-dark-green via-brand-green to-brand-light-green overflow-hidden">
+<!-- Background Image -->
 <div class="absolute inset-0">
 <img loading="lazy" decoding="async" src="/stoddgroup/assets/unsplash/photo-1588668214407-6ea9a6d8c272-w1920.jpg" width="1920" height="1280" alt="Utah mountain landscape aerial view" class="w-full h-full object-cover" style="object-position:center 50%">
 <div class="absolute inset-0" style="background:rgba(27,50,52,0.88)"></div>
 </div>
 <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="max-w-3xl">
-<p class="text-brand-orange font-semibold mb-4 text-lg">OUR MARKETS</p>
+<div class="max-w-4xl">
+<p class="text-brand-orange font-semibold mb-4 text-lg uppercase tracking-wide">Our Markets</p>
 <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
 Markets We Serve
 </h1>
 <p class="text-xl text-white/90 mb-8 leading-relaxed">
 Deep local expertise across Utah's most dynamic real estate markets. Whether you're buying your first home or building an investment portfolio, we know these communities inside and out.
 </p>
+<a href="/stoddgroup/contact" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
+Schedule a Free Strategy Call
+</a>
 </div>
 </div>
 </section>
 
 <!-- Area Card Styles -->
 <style>
-.mkt-card { position:relative; border-radius:1rem; overflow:hidden; cursor:pointer; }
-.mkt-card img { width:100%; height:100%; object-fit:cover; transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94); }
-.mkt-card:hover img { transform:scale(1.08); }
-.mkt-card .mkt-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(25,25,25,0.85) 0%, rgba(25,25,25,0.3) 40%, rgba(25,25,25,0.05) 100%); transition:background 0.4s ease; }
-.mkt-card:hover .mkt-overlay { background:linear-gradient(to top, rgba(25,25,25,0.9) 0%, rgba(25,25,25,0.35) 45%, rgba(25,25,25,0.1) 100%); }
+.mkt-card { position:relative; border-radius:1rem; overflow:hidden; }
+.mkt-card img { width:100%; height:100%; object-fit:cover; }
+.mkt-card .mkt-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(25,25,25,0.85) 0%, rgba(25,25,25,0.3) 40%, rgba(25,25,25,0.05) 100%); }
 .mkt-card .mkt-content { position:absolute; bottom:0; left:0; right:0; padding:2rem; z-index:2; }
 .mkt-card .mkt-name { color:#fff; font-weight:700; font-size:1.75rem; margin-bottom:0.25rem; font-family:var(--font-heading,'DM Sans',system-ui,sans-serif); }
 .mkt-card .mkt-sub { color:rgba(255,255,255,0.7); font-size:0.875rem; font-family:var(--font-body,'Inter',system-ui,sans-serif); }
+.mkt-compare { width:100%; border-collapse:collapse; font-family:var(--font-body,'Inter',system-ui,sans-serif); }
+.mkt-compare thead th { background:#f9fafb; color:#6b7280; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; padding:0.875rem 1.25rem; text-align:left; white-space:nowrap; }
+.mkt-compare tbody td { padding:1.25rem; border-top:1px solid #f3f4f6; white-space:nowrap; }
+.mkt-compare tbody td.mkt-best-for { white-space:normal; min-width:220px; }
+.mkt-compare tbody tr:nth-child(even) { background:#fafafa; }
+.mkt-compare .mkt-county-name { font-weight:700; color:#111827; font-size:1rem; font-family:var(--font-heading,'DM Sans',system-ui,sans-serif); }
+.mkt-compare .mkt-county-sub { font-size:0.75rem; color:#9ca3af; margin-top:2px; }
+.mkt-compare .mkt-metric { font-weight:700; color:#2d5245; font-size:1.0625rem; font-family:var(--font-heading,'DM Sans',system-ui,sans-serif); }
+.mkt-compare .mkt-tag { display:inline-block; font-size:0.75rem; background:rgba(232,168,124,0.15); color:#c4633c; padding:0.25rem 0.625rem; border-radius:9999px; margin-right:0.375rem; margin-bottom:0.25rem; font-weight:600; }
 </style>
+
+<!-- At-a-Glance Comparison Table -->
+<section class="py-16 md:py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<p style="color:#e8a87c;font-weight:600;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">AT A GLANCE</p>
+<h2 class="text-3xl md:text-4xl font-bold mb-3">Utah Markets Compared</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">A quick side-by-side snapshot of the four counties we serve. All figures reflect recent full-year market data.</p>
+</div>
+<div style="overflow-x:auto;border-radius:1rem;box-shadow:0 1px 3px rgba(0,0,0,0.05);border:1px solid #f3f4f6;background:white;">
+<table class="mkt-compare">
+<thead>
+<tr>
+<th>County</th>
+<th>Median Price</th>
+<th>Median Rent</th>
+<th>YoY Appreciation</th>
+<th>Avg Days on Market</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="mkt-county-name">Salt Lake County</div><div class="mkt-county-sub">Utah's economic hub</div></td>
+<td class="mkt-metric">$565K</td>
+<td class="mkt-metric">$2,400/mo</td>
+<td class="mkt-metric">4.8%</td>
+<td class="mkt-metric">28 days</td>
+<td class="mkt-best-for"><span class="mkt-tag">First-time buyers</span><span class="mkt-tag">Long-term appreciation</span></td>
+</tr>
+<tr>
+<td><div class="mkt-county-name">Utah County</div><div class="mkt-county-sub">Silicon Slopes corridor</div></td>
+<td class="mkt-metric">$520K</td>
+<td class="mkt-metric">$2,250/mo</td>
+<td class="mkt-metric">5.6%</td>
+<td class="mkt-metric">34 days</td>
+<td class="mkt-best-for"><span class="mkt-tag">Student rentals</span><span class="mkt-tag">Tech workforce housing</span></td>
+</tr>
+<tr>
+<td><div class="mkt-county-name">Davis County</div><div class="mkt-county-sub">Between SLC and Ogden</div></td>
+<td class="mkt-metric">$490K</td>
+<td class="mkt-metric">$2,150/mo</td>
+<td class="mkt-metric">4.5%</td>
+<td class="mkt-metric">32 days</td>
+<td class="mkt-best-for"><span class="mkt-tag">Long-hold rentals</span><span class="mkt-tag">Commuter families</span></td>
+</tr>
+<tr>
+<td><div class="mkt-county-name">Weber County</div><div class="mkt-county-sub">Utah's value play</div></td>
+<td class="mkt-metric">$395K</td>
+<td class="mkt-metric">$1,900/mo</td>
+<td class="mkt-metric">6.1%</td>
+<td class="mkt-metric">38 days</td>
+<td class="mkt-best-for"><span class="mkt-tag">Cash flow</span><span class="mkt-tag">First-time investors</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-center text-xs text-gray-500 mt-4">Data compiled from Utah MLS and public county records. Figures are approximate and change over time.</p>
+</div>
+</section>
 
 <!-- Salt Lake County -->
 <section class="py-16 md:py-24 bg-white">
@@ -76,24 +147,24 @@ The epicenter of Utah's booming economy, Salt Lake County offers everything from
 <span class="text-sm bg-brand-light-green/30 text-brand-dark-green px-3 py-1.5 rounded-full font-medium">Magna</span>
 </div>
 </div>
-<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
 <div class="bg-gray-50 rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">1.1M+</div>
-<div class="text-sm text-gray-500">Population</div>
-</div>
-<div class="bg-gray-50 rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">#1</div>
-<div class="text-sm text-gray-500">Utah Market</div>
+<div class="text-2xl font-bold text-brand-dark-green">$565K</div>
+<div class="text-xs text-gray-500 mt-1">Median Price</div>
 </div>
 <div class="bg-gray-50 rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-orange">Hot</div>
-<div class="text-sm text-gray-500">Market Temp</div>
+<div class="text-2xl font-bold text-brand-dark-green">$2,400</div>
+<div class="text-xs text-gray-500 mt-1">Median Rent/mo</div>
+</div>
+<div class="bg-gray-50 rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">4.8%</div>
+<div class="text-xs text-gray-500 mt-1">YoY Appreciation</div>
+</div>
+<div class="bg-gray-50 rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">28</div>
+<div class="text-xs text-gray-500 mt-1">Avg Days on Market</div>
 </div>
 </div>
-<a href="/stoddgroup/contact" class="inline-flex items-center gap-2 bg-brand-dark-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-green transition-colors">
-Invest in Salt Lake County
-<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-</a>
 </div>
 </div>
 </div>
@@ -124,24 +195,24 @@ Utah County is one of the fastest-growing regions in the nation. Anchored by Pro
 <span class="text-sm bg-brand-light-green/30 text-brand-dark-green px-3 py-1.5 rounded-full font-medium">Springville</span>
 </div>
 </div>
-<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
 <div class="bg-white rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">700K+</div>
-<div class="text-sm text-gray-500">Population</div>
-</div>
-<div class="bg-white rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">Top 5</div>
-<div class="text-sm text-gray-500">US Growth</div>
+<div class="text-2xl font-bold text-brand-dark-green">$520K</div>
+<div class="text-xs text-gray-500 mt-1">Median Price</div>
 </div>
 <div class="bg-white rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-orange">Hot</div>
-<div class="text-sm text-gray-500">Market Temp</div>
+<div class="text-2xl font-bold text-brand-dark-green">$2,250</div>
+<div class="text-xs text-gray-500 mt-1">Median Rent/mo</div>
+</div>
+<div class="bg-white rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">5.6%</div>
+<div class="text-xs text-gray-500 mt-1">YoY Appreciation</div>
+</div>
+<div class="bg-white rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">34</div>
+<div class="text-xs text-gray-500 mt-1">Avg Days on Market</div>
 </div>
 </div>
-<a href="/stoddgroup/contact" class="inline-flex items-center gap-2 bg-brand-dark-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-green transition-colors">
-Invest in Utah County
-<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-</a>
 </div>
 <!-- Image Card -->
 <div class="mkt-card lg:order-1" style="height:420px;">
@@ -189,24 +260,24 @@ Situated between Salt Lake City and Ogden, Davis County is known for its family-
 <span class="text-sm bg-brand-light-green/30 text-brand-dark-green px-3 py-1.5 rounded-full font-medium">Woods Cross</span>
 </div>
 </div>
-<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
 <div class="bg-gray-50 rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">370K+</div>
-<div class="text-sm text-gray-500">Population</div>
-</div>
-<div class="bg-gray-50 rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">A+</div>
-<div class="text-sm text-gray-500">Schools</div>
+<div class="text-2xl font-bold text-brand-dark-green">$490K</div>
+<div class="text-xs text-gray-500 mt-1">Median Price</div>
 </div>
 <div class="bg-gray-50 rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-orange">Warm</div>
-<div class="text-sm text-gray-500">Market Temp</div>
+<div class="text-2xl font-bold text-brand-dark-green">$2,150</div>
+<div class="text-xs text-gray-500 mt-1">Median Rent/mo</div>
+</div>
+<div class="bg-gray-50 rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">4.5%</div>
+<div class="text-xs text-gray-500 mt-1">YoY Appreciation</div>
+</div>
+<div class="bg-gray-50 rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">32</div>
+<div class="text-xs text-gray-500 mt-1">Avg Days on Market</div>
 </div>
 </div>
-<a href="/stoddgroup/contact" class="inline-flex items-center gap-2 bg-brand-dark-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-green transition-colors">
-Invest in Davis County
-<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-</a>
 </div>
 </div>
 </div>
@@ -235,24 +306,24 @@ Weber County, anchored by Ogden, is an investor's dream. With lower entry prices
 <span class="text-sm bg-brand-light-green/30 text-brand-dark-green px-3 py-1.5 rounded-full font-medium">Washington Terrace</span>
 </div>
 </div>
-<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
 <div class="bg-white rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">260K+</div>
-<div class="text-sm text-gray-500">Population</div>
-</div>
-<div class="bg-white rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-dark-green">High</div>
-<div class="text-sm text-gray-500">Cash Flow</div>
+<div class="text-2xl font-bold text-brand-dark-green">$395K</div>
+<div class="text-xs text-gray-500 mt-1">Median Price</div>
 </div>
 <div class="bg-white rounded-xl p-4 text-center">
-<div class="text-2xl font-bold text-brand-orange">Warm</div>
-<div class="text-sm text-gray-500">Market Temp</div>
+<div class="text-2xl font-bold text-brand-dark-green">$1,900</div>
+<div class="text-xs text-gray-500 mt-1">Median Rent/mo</div>
+</div>
+<div class="bg-white rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">6.1%</div>
+<div class="text-xs text-gray-500 mt-1">YoY Appreciation</div>
+</div>
+<div class="bg-white rounded-xl p-4 text-center">
+<div class="text-2xl font-bold text-brand-dark-green">38</div>
+<div class="text-xs text-gray-500 mt-1">Avg Days on Market</div>
 </div>
 </div>
-<a href="/stoddgroup/contact" class="inline-flex items-center gap-2 bg-brand-dark-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-green transition-colors">
-Invest in Weber County
-<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-</a>
 </div>
 <!-- Image Card -->
 <div class="mkt-card lg:order-1" style="height:420px;">
@@ -286,7 +357,7 @@ No pressure. No sales pitch. Just honest guidance from someone who's been there.
 
 </main>
 
-<footer class="relative overflow-hidden bg-brand-dark-green text-white"> <!-- Footer mountain texture --><svg class="absolute pointer-events-none" style="bottom:0;left:0;right:0;width:100%;height:230px;z-index:0" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,100 C0,70 80,60 160,55 C240,45 320,55 400,48 C480,40 560,52 640,45 C720,40 800,50 880,42 C960,38 1040,48 1120,43 L1200,45 L1200,100 Z" fill="#ffffff" opacity="0.05"/><path d="M0,100 L0,50 L80,20 L160,40 L240,15 L320,35 L400,10 L480,30 L560,5 L640,25 L720,15 L800,40 L880,18 L960,38 L1040,12 L1120,32 L1200,20 L1200,100 Z" fill="#ffffff" opacity="0.085"/></svg> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16" style="position:relative;z-index:1"> <div class="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12"> <div class="md:col-span-2"> <div class="flex items-center gap-3 mb-4"> <img loading="lazy" decoding="async" src="/stoddgroup/logo.jpg" width="271" height="284" alt="Stodd Group Real Estate Logo" class="h-12 w-12"> <h3 class="text-2xl font-bold">Stodd Group Real Estate</h3> </div> <p class="text-brand-light-green mb-6 max-w-md">
+<footer class="relative overflow-hidden bg-brand-dark-green text-white"> <!-- Footer cloud texture (above mountains) --><div class="pointer-events-none" style="position:absolute;left:0;right:0;top:0;height:50%;z-index:0" aria-hidden="true"><svg style="position:absolute;left:3%;top:15%;width:200px;height:73px" viewBox="0 0 300 110"><g fill="#ffffff" opacity="0.06"><ellipse cx="150" cy="86" rx="135" ry="12"/><circle cx="55" cy="78" r="16"/><circle cx="95" cy="64" r="26"/><circle cx="145" cy="52" r="38"/><circle cx="200" cy="58" r="32"/><circle cx="245" cy="76" r="18"/></g></svg><svg style="position:absolute;right:6%;top:8%;width:240px;height:88px" viewBox="0 0 300 110"><g fill="#ffffff" opacity="0.065"><ellipse cx="150" cy="86" rx="135" ry="12"/><circle cx="55" cy="78" r="16"/><circle cx="95" cy="64" r="26"/><circle cx="145" cy="52" r="38"/><circle cx="200" cy="58" r="32"/><circle cx="245" cy="76" r="18"/></g></svg><svg style="position:absolute;left:44%;top:32%;width:140px;height:51px" viewBox="0 0 300 110"><g fill="#ffffff" opacity="0.05"><ellipse cx="150" cy="86" rx="135" ry="12"/><circle cx="55" cy="78" r="16"/><circle cx="95" cy="64" r="26"/><circle cx="145" cy="52" r="38"/><circle cx="200" cy="58" r="32"/><circle cx="245" cy="76" r="18"/></g></svg></div> <!-- Footer mountain texture --><svg class="absolute pointer-events-none" style="bottom:0;left:0;right:0;width:100%;height:230px;z-index:0" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0,100 C0,70 80,60 160,55 C240,45 320,55 400,48 C480,40 560,52 640,45 C720,40 800,50 880,42 C960,38 1040,48 1120,43 L1200,45 L1200,100 Z" fill="#ffffff" opacity="0.05"/><path d="M0,100 L0,50 L80,20 L160,40 L240,15 L320,35 L400,10 L480,30 L560,5 L640,25 L720,15 L800,40 L880,18 L960,38 L1040,12 L1120,32 L1200,20 L1200,100 Z" fill="#ffffff" opacity="0.085"/></svg> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16" style="position:relative;z-index:1"> <div class="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12"> <div class="md:col-span-2"> <div class="flex items-center gap-3 mb-4"> <img loading="lazy" decoding="async" src="/stoddgroup/logo.jpg" width="271" height="284" alt="Stodd Group Real Estate Logo" class="h-12 w-12"> <h3 class="text-2xl font-bold">Stodd Group Real Estate</h3> </div> <p class="text-brand-light-green mb-6 max-w-md">
 Utah Real Estate Investor & Educator helping first-time buyers and new investors achieve financial freedom through house hacking and strategic investing.
 </p> <div style="display:flex;align-items:center;gap:0.75rem;">
   <a href="#" target="_blank" style="width:2.25rem;height:2.25rem;background:rgba(255,255,255,0.1);color:var(--color-brand-light-green,#bad9d9);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:color 0.2s,background 0.2s;" onmouseenter="this.style.color='var(--color-brand-orange,#E8A87C)';this.style.background='rgba(255,255,255,0.2)';" onmouseleave="this.style.color='var(--color-brand-light-green,#bad9d9)';this.style.background='rgba(255,255,255,0.1)';" aria-label="Instagram">
@@ -303,7 +374,7 @@ Utah Real Estate Investor & Educator helping first-time buyers and new investors
   </a>
 </div> </div> <div> <h4 class="font-bold mb-4 text-brand-orange">Get Started</h4> <ul class="space-y-3"> <li><a href="/stoddgroup/buying-a-house/" class="text-brand-light-green hover:text-white transition-colors">Buying a House</a></li> <li><a href="/stoddgroup/real-estate-investing/" class="text-brand-light-green hover:text-white transition-colors">Real Estate Investing</a></li> <li><a href="/stoddgroup/selling/" class="text-brand-light-green hover:text-white transition-colors">Selling</a></li> </ul> </div> <div> <h4 class="font-bold mb-4 text-brand-orange">Resources</h4> <ul class="space-y-3"> <li><a href="/stoddgroup/blog" class="text-brand-light-green hover:text-white transition-colors">All Articles</a></li> <li><a href="/stoddgroup/learn" class="text-brand-light-green hover:text-white transition-colors">Free Courses</a></li> <li><a href="https://amzn.to/4jIh4HN" target="_blank" class="text-brand-light-green hover:text-white transition-colors">Break Free (Book)</a></li> <li><a href="/stoddgroup/about" class="text-brand-light-green hover:text-white transition-colors">About Us</a></li> </ul> </div> </div> <div class="border-t border-brand-green/30 pt-8 text-center"> <p class="text-brand-light-green text-sm">
 &copy; 2026 Stoddgroup.com Real Estate. All rights reserved.
-</p> </div> </div> </footer>
+</p> <p class="text-brand-light-green text-sm" style="margin-top:1rem;max-width:52rem;margin-left:auto;margin-right:auto;line-height:1.6">This material is for general information purposes. This website does not offer or solicit the sale of any securities or investment products. Nothing here should be considered a recommendation to buy, sell, or hold any security, or to pursue any investment strategy. Additionally, nothing on this website constitutes investment, accounting, tax, or legal advice.</p> </div> </div> </footer>
 
 <script type="module">const o=document.getElementById("mobile-menu-btn"),c=document.getElementById("mobile-menu");o?.addEventListener("click",()=>{c?.classList.toggle("hidden")});const l=document.querySelectorAll(".mobile-dropdown-btn");l.forEach(e=>{e.addEventListener("click",()=>{const t=e.nextElementSibling,n=e.querySelector("svg");t?.classList.toggle("hidden"),n?.classList.toggle("rotate-180")})});</script>
 <script src="/stoddgroup/strategy-modal.js" defer></script>
