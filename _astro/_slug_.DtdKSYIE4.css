@@ -76,3 +76,4 @@
 @media (min-width:1024px){
   .lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}
 }
+.mt-8{margin-top:calc(var(--spacing) * 8)}

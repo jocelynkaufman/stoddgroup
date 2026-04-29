@@ -90,7 +90,7 @@ Buy, Rehab, Rent, Refinance, Repeat &mdash; the strategy experienced investors u
 <div class="flex items-center gap-3 mb-4"><span class="text-3xl">🏡</span><h3 class="text-2xl font-bold text-brand-dark-green">Single Family Homes</h3></div>
 <div style="display:flex;flex-direction:column;gap:1rem">
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Entry Price</span><span class="text-gray-600">$400K&ndash;$700K typical</span></div>
-<div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Financing</span><span class="text-gray-600">Conventional, 20% down</span></div>
+<div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Financing</span><span class="text-gray-600">Conventional, 25% down</span></div>
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Cash Flow</span><span class="text-gray-600">Modest ($100&ndash;$400/mo)</span></div>
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Management</span><span class="text-gray-600">One tenant, simpler</span></div>
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Vacancy Risk</span><span class="text-gray-600">100% if tenant leaves</span></div>
@@ -106,7 +106,7 @@ Buy, Rehab, Rent, Refinance, Repeat &mdash; the strategy experienced investors u
 <div class="flex items-center gap-3 mb-4"><span class="text-3xl">🏬</span><h3 class="text-2xl font-bold text-brand-dark-green">Multifamily (2&ndash;4 Units)</h3></div>
 <div style="display:flex;flex-direction:column;gap:1rem">
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Entry Price</span><span class="text-gray-600">$500K&ndash;$1M typical</span></div>
-<div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Financing</span><span class="text-gray-600">FHA 3.5% down (owner-occ)</span></div>
+<div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Financing</span><span class="text-gray-600">Conventional, 25% down</span></div>
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Cash Flow</span><span class="text-gray-600">Stronger ($400&ndash;$1,200/mo)</span></div>
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Management</span><span class="text-gray-600">Multiple tenants, more work</span></div>
 <div style="display:flex;justify-content:space-between;padding-bottom:0.75rem;border-bottom:1px solid #e5e7eb"><span class="font-semibold text-gray-700">Vacancy Risk</span><span class="text-gray-600">25&ndash;50% if one leaves</span></div>
@@ -133,13 +133,16 @@ Buy, Rehab, Rent, Refinance, Repeat &mdash; the strategy experienced investors u
 <!-- Cash-on-Cash -->
 <div class="calc-card">
 <h3 class="text-xl font-bold text-brand-dark-green mb-2">💵 Cash-on-Cash Return</h3>
-<p class="text-sm text-gray-600 mb-5">Annual cash flow divided by total cash invested. The fastest way to compare deals on equal footing.</p>
+<p class="text-sm text-gray-600 mb-5">Annual cash flow divided by cash invested. The fastest way to compare deals on equal footing.</p>
+<label class="calc-label">Property Price</label>
+<div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="number" class="calc-input" id="coc-price" value="500000" min="1" step="5000"></div>
+<label class="calc-label">Down Payment</label>
+<div class="calc-input-wrap"><input type="number" class="calc-input" id="coc-dp" value="25" min="0" max="100" step="1"><span class="calc-suffix">%</span></div>
 <label class="calc-label">Annual Pre-Tax Cash Flow</label>
-<div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="number" class="calc-input" id="coc-cashflow" value="6000" min="0" step="500"></div>
-<label class="calc-label">Total Cash Invested</label>
-<div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="number" class="calc-input" id="coc-invested" value="60000" min="1" step="1000"></div>
-<div class="calc-result"><div class="calc-result-label">Cash-on-Cash Return</div><div class="calc-result-value" id="coc-result">10.00%</div></div>
-<p class="calc-hint">Investors typically target 8&ndash;12% in Utah's current market.</p>
+<div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="number" class="calc-input" id="coc-cashflow" value="9000" min="0" step="500"></div>
+<div class="calc-derived"><span>Cash invested</span><span id="coc-invested">$125,000</span></div>
+<div class="calc-result"><div class="calc-result-label">Cash-on-Cash Return</div><div class="calc-result-value" id="coc-result">7.20%</div></div>
+<p class="calc-hint">Investment loans typically require 25% down. Investors target 8&ndash;12% cash-on-cash in Utah's current market.</p>
 </div>
 <!-- Cap Rate -->
 <div class="calc-card">
@@ -156,13 +159,16 @@ Buy, Rehab, Rent, Refinance, Repeat &mdash; the strategy experienced investors u
 <div class="calc-card">
 <h3 class="text-xl font-bold text-brand-dark-green mb-2">🏦 Mortgage Payment</h3>
 <p class="text-sm text-gray-600 mb-5">Principal and interest only. Add taxes, insurance, and HOA separately for true PITI.</p>
-<label class="calc-label">Loan Amount</label>
-<div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="number" class="calc-input" id="mort-amount" value="400000" min="1" step="1000"></div>
-<label class="calc-label">Interest Rate (%)</label>
+<label class="calc-label">Property Price</label>
+<div class="calc-input-wrap"><span class="calc-prefix">$</span><input type="number" class="calc-input" id="mort-price" value="500000" min="1" step="5000"></div>
+<label class="calc-label">Down Payment</label>
+<div class="calc-input-wrap"><input type="number" class="calc-input" id="mort-dp" value="25" min="0" max="100" step="1"><span class="calc-suffix">%</span></div>
+<label class="calc-label">Interest Rate</label>
 <div class="calc-input-wrap"><input type="number" class="calc-input" id="mort-rate" value="7.0" min="0.1" max="20" step="0.1"><span class="calc-suffix">%</span></div>
-<label class="calc-label">Term (years)</label>
+<label class="calc-label">Term</label>
 <div class="calc-input-wrap"><input type="number" class="calc-input" id="mort-term" value="30" min="1" max="40" step="1"><span class="calc-suffix">yrs</span></div>
-<div class="calc-result"><div class="calc-result-label">Monthly Payment (P&amp;I)</div><div class="calc-result-value" id="mort-result">$2,661</div></div>
+<div class="calc-derived"><span>Loan amount</span><span id="mort-loan">$375,000</span></div>
+<div class="calc-result"><div class="calc-result-label">Monthly Payment (P&amp;I)</div><div class="calc-result-value" id="mort-result">$2,495</div></div>
 <p class="calc-hint">For total monthly cost, add property tax (~0.55% in UT), insurance, and HOA.</p>
 </div>
 </div>
@@ -181,7 +187,9 @@ Buy, Rehab, Rent, Refinance, Repeat &mdash; the strategy experienced investors u
   .calc-input:not([id*="prefix"]):not([id*="suffix"]){padding-right:0.85rem}
   .calc-card .calc-input-wrap:has(.calc-suffix) .calc-input{padding-left:0.85rem;padding-right:2.5rem}
   .calc-input:focus{outline:none;border-color:#1b3234;box-shadow:0 0 0 3px rgba(27,50,52,0.12)}
-  .calc-result{margin-top:1.5rem;padding:1.25rem;background:#1b3234;border-radius:0.75rem;text-align:center}
+  .calc-derived{margin-top:1rem;padding:0.7rem 0.85rem;background:#fff;border:1px dashed #cbd5e1;border-radius:0.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.85rem;color:#475569;font-variant-numeric:tabular-nums}
+  .calc-derived span:last-child{font-weight:700;color:#1b3234}
+  .calc-result{margin-top:1rem;padding:1.25rem;background:#1b3234;border-radius:0.75rem;text-align:center}
   .calc-result-label{color:#bad9d9;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.4rem}
   .calc-result-value{color:#e8a87c;font-size:2rem;font-weight:700;font-variant-numeric:tabular-nums}
   .calc-hint{font-size:0.75rem;color:#6b7280;margin-top:0.85rem;line-height:1.5;font-style:italic}
@@ -194,24 +202,28 @@ Buy, Rehab, Rent, Refinance, Repeat &mdash; the strategy experienced investors u
   function fmtMoney(n){ if(!isFinite(n)) return '—'; return '$'+Math.round(n).toLocaleString(); }
   function val(id){ var el=document.getElementById(id); return el?parseFloat(el.value)||0:0; }
   function bind(ids, fn){ ids.forEach(function(id){ var el=document.getElementById(id); if(el) el.addEventListener('input', fn); }); fn(); }
-  // Cash-on-Cash
-  bind(['coc-cashflow','coc-invested'], function(){
-    var cf=val('coc-cashflow'), inv=val('coc-invested');
+  // Cash-on-Cash (price + down payment % + cash flow)
+  bind(['coc-price','coc-dp','coc-cashflow'], function(){
+    var price=val('coc-price'), dp=val('coc-dp'), cf=val('coc-cashflow');
+    var inv=price*(dp/100);
     var r=inv>0 ? (cf/inv)*100 : NaN;
+    var invOut=document.getElementById('coc-invested'); if(invOut) invOut.textContent=fmtMoney(inv);
     var out=document.getElementById('coc-result'); if(out) out.textContent=fmtPct(r);
   });
-  // Cap Rate
+  // Cap Rate (financing-independent: NOI / value)
   bind(['cap-noi','cap-value'], function(){
     var noi=val('cap-noi'), v=val('cap-value');
     var r=v>0 ? (noi/v)*100 : NaN;
     var out=document.getElementById('cap-result'); if(out) out.textContent=fmtPct(r);
   });
-  // Mortgage P&I
-  bind(['mort-amount','mort-rate','mort-term'], function(){
-    var P=val('mort-amount'), r=val('mort-rate')/100/12, n=val('mort-term')*12;
+  // Mortgage P&I (price + down payment % + rate + term)
+  bind(['mort-price','mort-dp','mort-rate','mort-term'], function(){
+    var price=val('mort-price'), dp=val('mort-dp'), r=val('mort-rate')/100/12, n=val('mort-term')*12;
+    var P=price*(1-dp/100);
     var pmt;
     if(r===0){ pmt = n>0 ? P/n : NaN; }
     else { pmt = P*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1); }
+    var loanOut=document.getElementById('mort-loan'); if(loanOut) loanOut.textContent=fmtMoney(P);
     var out=document.getElementById('mort-result'); if(out) out.textContent=fmtMoney(pmt);
   });
 })();
