@@ -1,0 +1,311 @@
+# Customer Reviews Data
+# ----------------------------------------------------------------------
+# Fill in one review per block. Separate each review with a line of
+# three dashes ("---") on its own line.
+#
+# Fields:
+#   Review:      The full review text. Can span multiple lines.
+#   Name:        Reviewer's full name (e.g. Shawna Howard)
+#   Rating:      Number 1-5 (we display as stars)
+#   Date:        Whatever you want shown (e.g. "6 months ago", "March 2026")
+#   Photo:       URL to profile photo, OR leave blank for a default avatar
+#
+# Notes:
+#  - Don't worry about quote marks around the review — I'll add them.
+#  - For Google profile photos, right-click the avatar on the Google
+#    review and "Copy image address" to grab the lh3.googleusercontent.com URL.
+#  - Order in this file = order on the page (top-to-bottom, left-to-right).
+# ----------------------------------------------------------------------
+
+Review: Jocelyn is an expert in buying investment properties and it shows. She guided us through the process and had tons of great advice. We will be buying our next investment property with her as our realtor because she makes that daunting process easy. Her house hacking website made all the financial calculations easy and allowed us to narrow down our choices quickly and efficiently.
+Name: Michael Van Oosten
+Rating: 5
+Date: April 2026
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXY9-vZKTLKmcOc1Yxe1qL3YlR7c3s-FYp49BiB_DdyAn4DRsKG=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Working with Jocelyn was an amazing experience as a first-time homebuyer. She was incredibly helpful, kind, and organized throughout the entire process, making everything feel smooth and stress-free.
+
+She took the time to answer all my questions, explain each step, and made sure I felt confident in my decisions. I truly felt supported every step of the way.
+
+I’m so grateful for her guidance and would highly recommend Jocelyn to anyone looking for a reliable and caring realtor.
+Name: Luis Gonzalez
+Rating: 5
+Date: March 2026
+Photo: none, find stock photo
+
+---
+
+Review: I had the pleasure of working with Jocelyn on a duplex transaction in South Salt Lake, and I can’t say enough good things about her. From start to finish, she was fantastic. She was always responsive, always reachable, and a true professional.
+
+With tenant-occupied properties, there are often a lot of moving parts and potential complications, but Jocelyn handled everything with ease. Her communication was clear and consistent, and she worked seamlessly as a teammate throughout the process.
+
+The entire transaction was smooth and collaborative thanks to her dedication and attention to detail. I’d be thrilled to work with Jocelyn again any time! She’s exactly the kind of agent who makes deals a pleasure.
+
+Name: Jenna Gianneschi
+Rating: 5
+Date: 6 months ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXqgYNOBwYyYPOUhnxcdI9RZmgUrjSAm49YJwnPgjxTG8ctwlY1=w144-h144-p-rp-mo-ba4-br100
+
+---
+
+Review: Jocelyn really helped me out on my search. From explaining little details to being available to answer all my questions in a timely manner. It would have definitely been a mistake for me to use anyone else but her.
+Name: Erwin Manriquez
+Rating: 5
+Date: March 2026
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn is amazing to work with. She was actively looking with me for a duplex every day. I was out of state during an open house and she walked through for me with me on FaceTime. She creatively helped me build a competitive offer and we landed the perfect property for me. She has been an excellent coach and resource as I get started as a landlord. Being able to pick her brain is priceless as I jump into real estate investing.
+Name: Shawna Howard
+Rating: 5
+Date: 8 months ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjWqU0mHegInkNw8rxcrXkvjQsA1ETihgyWSKELDMCr9KPlvd4fF1g=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn is great! As I begin to invest in real estate properties, it's nice to have an expert by my side. Jocelyn has a great grasp of the Utah real estate market. She is organized and willing to share tips and tools with those of us who are new to the industry. She worked hard as our agent getting us the best price possible on our properties. I will continue to work with Jocelyn and highly recommend her services for anyone interested in investing in real estate properties.
+Name: Katie Barr
+Rating: 5
+Date: 9 months ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjVl32oPLS0UmNIc6_hRXwzO1hgO7H-4fw4NCP4tbV5fDWrp_oMQ=w144-h144-p-rp-mo-br100
+
+---
+
+Review: My wife and I are very meticulous human beings and are probably more picky than most when it comes to finding a home.
+
+Jocelyn was an absolute joy to work with... she was not only incredibly patient and attentive, but she's a wealth of knowledge. Beyond understanding the market and tactfully handling negotiations, she is super crafty when it comes to fixing/renovating things.
+
+This helped get us past some of the imperfections and gave us peace of mind that we can easily and cost-effectively make things look and feel exactly how we hoped.
+
+It's very clear that Jocelyn genuinely enjoys helping people and that drives her to do what she does. Will absolutely use her in the future and wouldn't hesitate to recommend her to anyone else.
+
+Thanks again for helping us find our new home!
+Name:Wofl Weisz
+Rating: 5
+Date: 8 months ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXYOcI3jwH2-Qp99fadIo8lq7JB6ct_sXtpGWr-INEbyrwD7DXIsw=w144-h144-p-rp-mo-ba3-br100
+
+---
+
+Review: As a mortgage lender, I work with a lot or realtors - and I have to say, working with Jocelyn was an awesome experience. She was super easy to communicate with, stayed on top of everything and made sure the whole process ran smoothly for everyone involved. I would definitely recommend her, and I'm looking forward to teaming up again soon!
+Name: Devyn Gerber
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Just closed on a house and couldn't be happier with Jocelyn! She helped us understand the market here in SLC and was patient with our search. When we found what felt like a great fit, her expertise helped us win a bid with 7 competing offers. Through closing, Jocelyn's experience continued to pay dividends- she has multiple contacts for anything you can imagine, and always made time to discuss our next steps and strategic thinking. Jocelyn's gone out of her way to make herself available as we get settled in and work on projects around the house.
+Jocelyn has my highest recommendation!
+Name: Willy McNamara
+Rating: 5
+Date: 11 months ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjWFNJrCZY2usZU6UE7rMtDCSMGW4gwMVSFkK-dRn6mXIGin1zibMg=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn is amazing she went above and beyond to help us get our first home! She's a straight shooter, she doesn't beat around the bush when it comes to things that are possible or not. We love an honest woman! Whenever we wanted to look at homes she was always available to take us around, and always gave us detailed answers to any questions we had.
+Name: Alex Zwahlen
+Rating: 5
+Date: 9 months ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjVdgTgX83aw7w5MdrgEpnxsypra0YV5NCRPvYXr1aTlRtdQW8CY=w144-h144-p-rp-mo-ba2-br100
+
+---
+
+Review: Jocelyn helped us strike quickly on a competitive home, guided us through all of the closing process, and was always very communicative and helpful with any questions. I highly recommend her and look forward to working with her again!
+Name: Joe Connelly
+Rating: 5
+Date: 11 months ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn is an incredible real estate agent. She truly has her clients best interest at heart and wants to see them succeed. Her dedication and passion for real estate is evident with what we were able to achieve with her help. I highly recommend having Jocelyn on your team when stepping into real estate. She gave great insight and reassurance on buying our first home.
+Name: Brooklyn Longhurst
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjVN93o8xBryenNoeXE_V95IofIR1a_wYRH4hrHDejYC5a_VxLo=w144-h144-p-rp-mo-br100
+
+---
+
+Review: I loved working with Jocelyn during this process. This is my first time purchasing a rental home and Jocelyn took all the worry out of the process. She was easy to communicate with, had great advice about the properties, and made everything in the process easy. She continues to help today even after the purchase. I will definitely continue to use Jocelyn and Canovo group for my next rental purchase.
+Name: Randal Nelson
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was incredibly helpful through the whole home-buying process. We were buying from out of state so having someone we could trust on the ground was critical for us. Would recommend Jocelyn to anyone looking for a great agent!
+Name: Dylan Brodsky
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was awesome! She is very knowledgable with the industry. We were looking for a House Hack opportunity and after finding one, Jocelyn helped us out so much and helped us close the deal in the best financially possible way! She has been a great asset since closing and is helping us find some tenants and pointing us to excellent resources to use during our new landlord experience. I can't recommend Jocelyn enough!
+Name: Spencer Longhurst
+Rating: 5
+Date: 2 years ago
+Photo: none, find stock photo
+
+---
+
+Review: I had the pleasure of working with Jocelyn over the last several months as she helped me secure an investment property in the SLC area. After connecting with multiple agents, I decided to work with Jocelyn since I found her to be the most honest and sincere. She is very knowledgeable about her market and was patient with me as a new investor in her area. Jocelyn was quick to reply to my inquiries and connected me with reputable contractors and property management. I get the sense that she truly cares about helping her clients reach their investment goals. Jocelyn made the whole experience as smooth as possible and I hope I can work with her again soon.
+Name: Chris Gallick
+Rating: 5
+Date: 3 years ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn is an amazing realtor. Anyone who is looking to buy their first home or scale their real estate portfolio is missing out if they don’t work with her. What makes Jocelyn unique is that she is an investor herself. She has spreadsheets and organizational tips to help anyone start their real estate journey. She is very responsive and listens to what is important to you. On top of that, she is collaborative and transparent.
+
+If you are considering using Jocelyn, please don’t hesitate to reach out to me. I am happy to share my experience with you. Don’t miss out on the best!
+Name: Hunter Henderson
+Rating: 5
+Date: 2 years ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was referred to me by my sister, who has worked with Jocelyn before. Now I know why. Jocelyn was a joy to work with and was very much on top of everything and helpful throughout the entire home buying process. She worked hard to understand our needs and negotiated accordingly with the seller's agent. She certainly went up to bat for us and sacrificed on our behalf. I highly recommend Jocelyn to anyone else interested in finding an agent for their own home buying goals. Thank you Jocelyn! :D
+Name: Colten McEwan
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjWgGJRz7xE7LIpCS5NFCPtv8MMrNVWk9F_5-x0h7gB9rKUGQX9D=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Exactly what we were looking for in an agent to help us start investing in real estate. Jocelyn is super organized and responsive, and she is eager to answer questions and offer advice from her own investing experience. She gives her honest opinion and has never pressured us into anything. We bought our first duplex just a couple months after starting to work with Jocelyn and I'm sure she'll help us find and close more deals in the future.
+Name: Nick Hulme
+Rating: 5
+Date: a year ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjX7J0jsPHfRwtN9FEhqz5mGlXeIwgvQGLnhGpE0_eqVMrQHnWnIMw=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn is a fantastic and knowledgeable realtor who found us our dream home. She helped us throughout the process and negotiated a killer price. We definitely recommend using Jocelyn and will be working together in the future!
+Name: Taryn Ferguson
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was awesome! She was so knowledgeable about the properties and helped us through the entire home buying process. She buys properties herself so she has the expertise to navigate all the ins and outs of home buying. She helped a complete beginner like myself buy a house in about a month! Thank you so much Jocelyn!
+Name: Conner Holmes
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXN_HF4y9pj9tfzDYuSAtBiWXPxieMq12WhupR4g9IOvppWNUT04g=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn was the best part of my buying experience from start to finish. This was my second home purchase but even still I learned so much from Jocelyn’s expertise and savvy real estate knowledge. I was looking for a house hack opportunity and I received many options daily from her. Once we found one, she guided me through the process with the amazing resources that’s she’s developed. Her detailed organization is second to none. That was very helpful as there’s a lot of details and deadlines that can get lost in the weeds. Her resources i .e. video training, spreadsheets for buying and managing and managing finances, guided me through all things buying. She offered tips along the way as well. Anytime I ran in to something I was unsure about (which was often) she was available to help. I was looking for a realtor to help with this second home to expand my real estate portfolio, particularly with guidance about investing from an experienced professional. She was everything I was looking for and much more. Couldn’t believe I was lucky enough to find someone who fit my needs so well as an investor!
+Name: Jemini Leckie
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was a breeze to work with. She’s incredibly knowledgeable about the real estate industry in SLC and in rental investments. She’s extremely organized and made the whole home buying process run smoothly & as easily as possible.
+Name: Mary Thurman
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn is an amazing agent. Very professional. Able to answer all my questions quickly and accurately. Has many resources and people to call to help if you need. Makes the whole process very easy. Will happily work with her again. Highly recommended.
+Name: Daniel Kool
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn has been great to work with!! She did a lot more for me than a typical realtor. She helped me analyze investment property numbers, provided me her systems for managing rentals, and continues to provide advice on my property and the rehab now that the sale has closed. I look forward to working with her on future investments!
+Name: Jennii Fielding
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjUhrAygRHU9iSlE5HPQXGNKGPJid2hQB8fo2DGg0k24Qw6_rWFKUw=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn helped us buy our first home which is also a long term investment. She walked us through the ins and outs of everything and was especially great at helping analyze the purchase from an investment perspective. We’re grateful she was a part of our team.
+Name: Joshua Miller
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXnjXAWH3ew79XDDpBm-8PXnI6b7eduY-aeAlU6mzKU54X-fNMm=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn made me feel really comfortable doing something that’s very uncomfortable. She made the process of buying my first rental property very easy and worry free. She stayed with me after the sale was done and helped me any way she could. She’s a rockstar
+Name: Trent Hansen
+Rating: 5
+Date: 2 years ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was incredibly resourceful while guiding us through our first home purchase. We were in the market for our very first house hack and as an investor herself, Jocelyn was the perfect partner in our first deal!
+Name: Joshua Bastian
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjVmNrhlIiFaDQQgdJV1fLXbF26LvjzYbagPLNqxIOrVAFlIOQE=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Jocelyn is seriously so awesome. She really knows her stuff and was the best ever to work with. She kept us super informed every step of the way and got us into our dream home. Highly recommend!
+Name: Kayla McEwan
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXXYRJ_k6xngoJNkqNOMh_p7n9nTcMcyWDzOtn3nIh6z3k-eFM=w144-h144-p-rp-mo-ba2-br100
+
+---
+
+Review: We loved working with Jocelyn. She did amazing with negotiations landing us a great deal on our home. I am looking forward to using her again on our next property!
+Name: AM & SP Rentals
+Rating: 5
+Date: 3 years ago
+Photo: none, find stock photo
+
+---
+
+Review: Jocelyn was very knowledgeable about Park City and guidance on how to update our home
+Name: Allison Denton
+Rating: 5
+Date: a year ago
+Photo: none, find stock photo
+
+---
+
+Review: Really enjoyed working with Jocelyn. Super personable, and her knowledge & experience in real estate was very helpful.. I really recommend her.
+Name: Shilow Pelaras
+Rating: 5
+Date: 3 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjWtFWPs_IiHPSexNbVqxOUImGfHdNfmNjpUqk4axqThiB2Qspc=w144-h144-p-rp-mo-br100
+
+---
+
+Review: Great experience and she was very helpful.
+Name: LeeAnn I.
+Rating: 5
+Date: 3 years ago
+Photo: none, find stock photo
+
+---
+
+Review: Awesome agent! Great eye for the details
+Name:Thomas Campbell
+Rating: 5
+Date: 2 years ago
+Photo: https://lh3.googleusercontent.com/a-/ALV-UjXPfbIHuvuhVY4ZUWpxhwRwRjKSul5c9PWbdqy5c-eJTIi142ku=w144-h144-p-rp-mo-br100
+
+---
+
