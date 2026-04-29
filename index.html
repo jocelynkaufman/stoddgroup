@@ -74,48 +74,72 @@ See More Reviews →
 <p class="text-xl text-gray-600 max-w-2xl mx-auto">Whether you're buying, selling, or investing &mdash; we'll meet you where you are.</p>
 </div>
 <div class="services-grid">
-<a href="/buying-a-house" class="services-tile">
-<div class="services-tile-img"><img loading="lazy" decoding="async" src="/first-time-buyers.jpg" alt="First-time home buyers in Utah"></div>
+<div class="services-tile">
+<a href="/buying-a-house" class="services-tile-imglink" aria-label="Buying a Home"><div class="services-tile-img"><img loading="lazy" decoding="async" src="/first-time-buyers.jpg" alt="First-time home buyers in Utah"></div></a>
 <div class="services-tile-body">
-<h3>Buying a Home</h3>
+<h3><a href="/buying-a-house" class="services-tile-titlelink">Buying a Home</a></h3>
 <p>From first-time buyers to seasoned investors &mdash; we'll help you find and win the right home in Utah's competitive market.</p>
-<span class="services-tile-cta">Explore Buying <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+<ul class="services-tile-sublinks">
+<li><a href="/buying-a-house/first-time-buyers/">First-Time Buyers</a></li>
+<li><a href="/buying-a-house/out-of-state/">Out of State Buyers</a></li>
+<li><a href="/markets-we-serve">Markets We Serve</a></li>
+</ul>
+<a href="/buying-a-house" class="services-tile-cta">Explore Buying <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
 </div>
-</a>
-<a href="/selling" class="services-tile">
-<div class="services-tile-img"><img loading="lazy" decoding="async" src="/key-handover.png" alt="Handing over keys after a Utah home sale"></div>
-<div class="services-tile-body">
-<h3>Selling Your Home</h3>
-<p>Maximize your sale price with strategic pricing, sharp marketing, and a team that knows how to close deals fast.</p>
-<span class="services-tile-cta">Explore Selling <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
 </div>
-</a>
-<a href="/real-estate-investing" class="services-tile">
-<div class="services-tile-img"><img loading="lazy" decoding="async" src="/investors.jpg" alt="Real estate investors building wealth in Utah"></div>
+<div class="services-tile">
+<a href="/real-estate-investing" class="services-tile-imglink" aria-label="Real Estate Investing"><div class="services-tile-img"><img loading="lazy" decoding="async" src="/investors.jpg" alt="Real estate investors building wealth in Utah"></div></a>
 <div class="services-tile-body">
-<h3>Real Estate Investing</h3>
+<h3><a href="/real-estate-investing" class="services-tile-titlelink">Real Estate Investing</a></h3>
 <p>House hacking, rentals, and long-term strategy &mdash; build wealth with Utah real estate alongside investors who've done it themselves.</p>
-<span class="services-tile-cta">Explore Investing <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+<ul class="services-tile-sublinks">
+<li><a href="/real-estate-investing/house-hacking/">House Hacking</a></li>
+<li><a href="/real-estate-investing/brrrr/">BRRRR Method</a></li>
+<li><a href="/real-estate-investing/short-term-rentals/">Short-Term Rentals</a></li>
+<li><a href="/real-estate-investing/1031-exchange/">1031 Exchange</a></li>
+<li><a href="/real-estate-investing/cost-segregation/">Cost Segregation</a></li>
+</ul>
+<a href="/real-estate-investing" class="services-tile-cta">Explore Investing <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
 </div>
-</a>
+</div>
+<div class="services-tile">
+<a href="/selling" class="services-tile-imglink" aria-label="Selling Your Home"><div class="services-tile-img"><img loading="lazy" decoding="async" src="/key-handover.png" alt="Handing over keys after a Utah home sale"></div></a>
+<div class="services-tile-body">
+<h3><a href="/selling" class="services-tile-titlelink">Selling Your Home</a></h3>
+<p>Maximize your sale price with strategic pricing, sharp marketing, and a team that knows how to close deals fast.</p>
+<ul class="services-tile-sublinks">
+<li><a href="/markets-we-serve">Markets We Serve</a></li>
+<li><a href="https://go.stoddgroup.com/widget/booking/1LZgsVyFaIbBOkyzvheR" target="_blank" rel="noopener">Free Strategy Call</a></li>
+</ul>
+<a href="/selling" class="services-tile-cta">Explore Selling <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+</div>
+</div>
 </div>
 </div>
 </section>
 
 <style>
   .services-grid{display:grid;grid-template-columns:1fr;gap:2rem}
-  .services-tile{display:block;background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform 0.25s ease, box-shadow 0.25s ease;text-decoration:none;color:inherit}
+  .services-tile{display:flex;flex-direction:column;background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform 0.25s ease, box-shadow 0.25s ease}
   .services-tile:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,0.12)}
+  .services-tile-imglink{display:block;text-decoration:none}
   .services-tile-img{aspect-ratio:16/10;overflow:hidden;background:#e5e7eb}
   .services-tile-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s ease}
   .services-tile:hover .services-tile-img img{transform:scale(1.04)}
-  .services-tile-body{padding:1.75rem}
-  .services-tile-body h3{font-size:1.5rem;font-weight:700;color:#1b3234;margin-bottom:0.75rem}
+  .services-tile-body{padding:1.75rem;display:flex;flex-direction:column;flex:1}
+  .services-tile-body h3{font-size:1.5rem;font-weight:700;margin-bottom:0.75rem;line-height:1.25}
+  .services-tile-titlelink{color:#1b3234;text-decoration:none;transition:color 0.15s ease}
+  .services-tile-titlelink:hover{color:#e8a87c}
   .services-tile-body p{color:#4b5563;line-height:1.65;margin-bottom:1.25rem}
-  .services-tile-cta{display:inline-flex;align-items:center;gap:0.5rem;color:#e8a87c;font-weight:600;transition:gap 0.2s ease}
+  .services-tile-sublinks{list-style:none;padding:0;margin:0 0 1.5rem;display:flex;flex-direction:column;gap:0.5rem}
+  .services-tile-sublinks li{font-size:0.9rem;line-height:1.4}
+  .services-tile-sublinks a{color:#4b5563;text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;transition:color 0.15s ease}
+  .services-tile-sublinks a::before{content:"›";color:#e8a87c;font-weight:700;font-size:1.05rem;line-height:1}
+  .services-tile-sublinks a:hover{color:#1b3234}
+  .services-tile-cta{display:inline-flex;align-items:center;gap:0.5rem;color:#e8a87c;font-weight:600;text-decoration:none;transition:gap 0.2s ease;margin-top:auto;align-self:flex-start}
   .services-tile-cta svg{width:1rem;height:1rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .services-tile:hover .services-tile-cta{gap:0.75rem}
-  @media (min-width:768px){.services-grid{grid-template-columns:repeat(3, 1fr)}}
+  @media (min-width:768px){.services-grid{grid-template-columns:repeat(3, 1fr);align-items:stretch}}
 </style>
 
 <section class="relative overflow-hidden pt-16 md:pt-20 pb-16 md:pb-20 bg-gradient-to-br from-brand-dark-green via-brand-dark-green to-brand-green/80">
