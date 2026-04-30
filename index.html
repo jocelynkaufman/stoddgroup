@@ -52,28 +52,25 @@
 }
 </script>
 <script>
-/* DEBUG: temporary — labels every element at top-left of homepage so we can identify the iPad black square */
+/* DEBUG: temporary — dumps every element near top-left into a fixed overlay */
 window.addEventListener('load', () => {
   setTimeout(() => {
-    const sy = window.scrollY;
-    const matches = [];
+    const lines = [];
     document.querySelectorAll('*').forEach(el => {
       const r = el.getBoundingClientRect();
-      const docTop = r.top + sy;
-      if (r.left < 200 && docTop < 500 && docTop > 0 && r.width > 10 && r.height > 10 && r.width < 400 && r.height < 400) {
-        matches.push({el, r, docTop});
+      const docTop = r.top + window.scrollY;
+      if (docTop > 60 && docTop < 400 && r.left < 250 && r.width > 5 && r.height > 5) {
+        const cs = getComputedStyle(el);
+        const cls = (el.className && el.className.toString()) || '';
+        const bg = cs.backgroundColor;
+        const isDark = /^rgba?\((\d+),\s*(\d+),\s*(\d+)/.test(bg) && (() => { const m = bg.match(/(\d+),\s*(\d+),\s*(\d+)/); return m && +m[1] < 60 && +m[2] < 60 && +m[3] < 60; })() && bg !== 'rgba(0, 0, 0, 0)';
+        lines.push((isDark ? '*** ' : '    ') + el.tagName + ' L' + Math.round(r.left) + ',T' + Math.round(docTop) + ' ' + Math.round(r.width) + 'x' + Math.round(r.height) + ' bg=' + bg.substring(0, 22) + ' ' + cls.substring(0, 35));
       }
     });
-    matches.sort((a,b) => (a.r.left + a.docTop) - (b.r.left + b.docTop));
-    matches.slice(0, 20).forEach((m, i) => {
-      m.el.style.outline = '3px solid red';
-      m.el.style.outlineOffset = '-1px';
-      const label = document.createElement('div');
-      const cls = (m.el.className && m.el.className.toString()) || '';
-      label.textContent = `[${i}] ${m.el.tagName} ${Math.round(m.r.width)}x${Math.round(m.r.height)} ${cls.substring(0,30)}`;
-      label.style.cssText = 'position:absolute;left:0;top:'+(m.docTop)+'px;background:yellow;color:black;font:11px monospace;padding:2px 4px;z-index:99999;pointer-events:none;border:1px solid red';
-      document.body.appendChild(label);
-    });
+    const overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#111;color:#0f0;font:10px monospace;padding:8px;z-index:9999999;max-height:60vh;overflow:auto;white-space:pre;line-height:1.3';
+    overlay.textContent = 'Found ' + lines.length + ' elements at top-left (*** = dark bg):\n' + lines.join('\n');
+    document.body.appendChild(overlay);
   }, 800);
 });
 </script>
