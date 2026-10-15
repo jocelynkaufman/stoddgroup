@@ -44,3 +44,8 @@ This is what the "Bump CSS filename to bust browser cache" commit did historical
 ## Deploy workflow
 
 Iterate on localhost → push to `staging` → review the Vercel preview → merge to `main` → live at stoddgroup.com.
+
+- Repo: `github.com/jocelynkaufman/stoddgroup`. Work on the local `staging` branch.
+- **Approval gates:** nothing is pushed without an explicit OK. Pushing to `staging` needs one approval; merging `staging` into `main` (production) needs a separate approval after the preview is reviewed.
+- Staging preview: https://stoddgroup-git-staging-jocey-j.vercel.app (Vercel login required).
+- Pushing `main` also triggers `.github/workflows/deploy.yml` (GitHub Pages), separate from Vercel production.
