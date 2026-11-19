@@ -137,11 +137,33 @@ Book a free 15-min call with Troy
     const hlLabel = 'font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.375rem;color:#e8a87c';
     const val = 'font-size:1.25rem;font-weight:700;color:#1b3234;line-height:1.1';
     const hlVal = 'font-size:1.25rem;font-weight:700;color:white;line-height:1.1';
+    const span = 'grid-column:1 / -1';
+    const subCard = 'padding:0.875rem;background:#f9fafb;border-radius:0.5rem;border:1px solid #f3f4f6';
+    const subLabel = 'font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#4b5563;margin-bottom:0.25rem';
+    const subVal = 'font-size:1.125rem;font-weight:700;color:#1b3234;line-height:1.1';
+    const subNote = 'font-size:0.75rem;color:#4b5563;margin:0.375rem 0 0;line-height:1.5';
+    const callout = 'margin-top:0.75rem;padding:0.75rem 0.875rem;background:linear-gradient(135deg,#e8f0ee 0%,#fdf1e4 100%);border-radius:0.5rem;font-size:0.8125rem;color:#1b3234;line-height:1.5';
     document.getElementById('ty-snapshot-grid').innerHTML =
       '<div style="' + card + '"><div style="' + label + '">You pay in rent</div><div style="' + val + '">' + fmtMoney(i.rent) + '/mo</div></div>' +
       '<div style="' + hl + '"><div style="' + hlLabel + '">You may afford</div><div style="' + hlVal + '">' + fmtK(r.affordLow) + ' – ' + fmtK(r.affordHigh) + '</div></div>' +
-      '<div style="' + card + '"><div style="' + label + '">Est. monthly payment</div><div style="' + val + '">' + fmtMoney(r.estPayment) + '/mo</div></div>' +
-      '<div style="' + card + '"><div style="' + label + '">Est. cash to close</div><div style="' + val + '">' + fmtMoney(r.cashNeeded) + '</div></div>';
+      '<div style="' + card + ';' + span + '"><div style="' + label + '">Est. monthly payment</div><div style="' + val + '">' + fmtMoney(r.estPayment) + '/mo</div></div>' +
+      '<div style="' + card + ';' + span + '">' +
+        '<div style="' + label + '">Est. cash to close</div>' +
+        '<div style="' + val + '">' + fmtMoney(r.cashNeeded) + ' total</div>' +
+        '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.625rem;margin-top:1rem">' +
+          '<div style="' + subCard + '">' +
+            '<div style="' + subLabel + '">🏠 Down Payment</div>' +
+            '<div style="' + subVal + '">' + fmtMoney(r.downPayment) + '</div>' +
+            '<p style="' + subNote + '">3.5% with FHA. Utah has assistance programs that can help here.</p>' +
+          '</div>' +
+          '<div style="' + subCard + '">' +
+            '<div style="' + subLabel + '">📋 Closing Costs</div>' +
+            '<div style="' + subVal + '">' + fmtMoney(r.closingCosts) + '</div>' +
+            '<p style="' + subNote + '">~3% of price. Often seller-paid when we negotiate.</p>' +
+          '</div>' +
+        '</div>' +
+        '<div style="' + callout + '">💡 <strong>Many of our first-time buyers walk into closing with just their down payment</strong> — some need even less with assistance.</div>' +
+      '</div>';
     document.getElementById('ty-snapshot-section').style.display = 'block';
   } catch(e) {}
 })();

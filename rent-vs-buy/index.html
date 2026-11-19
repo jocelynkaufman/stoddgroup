@@ -169,16 +169,31 @@
 <div class="snap-note">Comfortable to stretch range. Your actual number depends on credit and other debts — Troy can help you find it.</div>
 </div>
 
-<div class="snap-card">
+<div class="snap-card" style="grid-column:1 / -1">
 <div class="snap-label">Est. monthly payment</div>
 <div class="snap-value" id="out-payment">—</div>
 <div class="snap-note" id="out-payment-note">Principal, interest, taxes, insurance and FHA mortgage insurance.</div>
 </div>
 
-<div class="snap-card">
+<div class="snap-card" style="grid-column:1 / -1">
 <div class="snap-label">Est. cash to close</div>
 <div class="snap-value" id="out-cash">—</div>
-<div class="snap-note" id="out-cash-note">3.5% down payment plus closing costs. Closing costs are often negotiable as seller-paid.</div>
+<div class="snap-note" id="out-cash-note" style="margin-top:0.5rem"></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.75rem;margin-top:1.25rem">
+<div style="padding:1rem;background:#f9fafb;border-radius:0.5rem;border:1px solid #f3f4f6">
+<div style="font-size:0.8125rem;font-weight:700;color:#4b5563;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.375rem">🏠 Down Payment</div>
+<div style="font-size:1.375rem;font-weight:700;color:#1b3234" id="out-dp">—</div>
+<p style="font-size:0.8125rem;color:#4b5563;margin:0.375rem 0 0;line-height:1.5">3.5% with an FHA loan. Utah has down-payment assistance programs that can help cover part or all of this — we'll walk you through what you qualify for.</p>
+</div>
+<div style="padding:1rem;background:#f9fafb;border-radius:0.5rem;border:1px solid #f3f4f6">
+<div style="font-size:0.8125rem;font-weight:700;color:#4b5563;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.375rem">📋 Closing Costs</div>
+<div style="font-size:1.375rem;font-weight:700;color:#1b3234" id="out-cc">—</div>
+<p style="font-size:0.8125rem;color:#4b5563;margin:0.375rem 0 0;line-height:1.5">About 3% of the price (title, lender fees, prepaid taxes &amp; insurance). We can often negotiate for the seller to cover these.</p>
+</div>
+</div>
+<div style="margin-top:1rem;padding:0.875rem 1rem;background:linear-gradient(135deg,#e8f0ee 0%,#fdf1e4 100%);border-radius:0.5rem;font-size:0.875rem;color:#1b3234;line-height:1.55">
+💡 <strong>Many of our first-time buyers walk into closing with just their down payment</strong> — and some need even less once we factor in Utah's assistance programs.
+</div>
 </div>
 
 <div class="chart-card">
@@ -386,6 +401,7 @@ Get My Full Breakdown + Free Down Payment Guide
       affordLow, affordHigh,
       estPayment: Math.round(estPayment),
       downPayment: Math.round(downPayment),
+      closingCosts: Math.round(closingCosts),
       cashNeeded: Math.round(cashNeeded),
       rentPaid5Yr: Math.round(rentPaid5Yr),
       equity5Yr: Math.round(equity5Yr)
@@ -434,13 +450,18 @@ Get My Full Breakdown + Free Down Payment Guide
       $('out-payment-note').textContent = 'About ' + fmtMoney(rentVsPayment) + '/mo more than your rent — but you\'d be building equity instead of paying a landlord.';
     }
 
-    $('out-cash').textContent = fmtMoney(r.cashNeeded);
-    if (inputs.savings > 0 && inputs.savings < r.cashNeeded) {
-      $('out-cash-note').textContent = 'You have ' + fmtMoney(inputs.savings) + ' saved — Utah has down payment assistance programs that may help close the gap.';
+    $('out-cash').textContent = fmtMoney(r.cashNeeded) + ' total';
+    $('out-dp').textContent = fmtMoney(r.downPayment);
+    $('out-cc').textContent = fmtMoney(r.closingCosts);
+    // Savings-contextual note (empty if no savings entered)
+    if (inputs.savings > 0 && inputs.savings < r.downPayment) {
+      $('out-cash-note').textContent = 'You have ' + fmtMoney(inputs.savings) + ' saved — Utah\'s down-payment programs can help bridge the gap.';
+    } else if (inputs.savings > 0 && inputs.savings < r.cashNeeded) {
+      $('out-cash-note').textContent = 'You have ' + fmtMoney(inputs.savings) + ' saved — enough for your down payment. If we negotiate closing costs covered, you\'re set.';
     } else if (inputs.savings >= r.cashNeeded) {
-      $('out-cash-note').textContent = 'You\'ve already saved enough — ' + fmtMoney(inputs.savings) + '. Closing costs are often negotiable as seller-paid too.';
+      $('out-cash-note').textContent = 'You already have ' + fmtMoney(inputs.savings) + ' saved — that covers the whole thing.';
     } else {
-      $('out-cash-note').textContent = '3.5% down payment plus closing costs. Closing costs are often negotiable as seller-paid.';
+      $('out-cash-note').textContent = '';
     }
 
     $('out-rent-5yr').textContent = fmtMoney(r.rentPaid5Yr);
