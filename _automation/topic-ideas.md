@@ -8,111 +8,53 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 
 ## Queue (next to publish, top first)
 
-### 1. Utah Down Payment Assistance Programs: A First-Time Buyer's Guide to UHC, HOME, and Local Help
-- **Primary keyword**: utah down payment assistance
-- **Volume gut-check**: high
-- **Competitor coverage gap**: https://utahhousingcorp.org (official source, bureaucratic); https://www.utahrealestate.com/blog/down-payment-assistance (surface-level). Nobody consolidates UHC, FirstHome, Score, and HOME alongside typical purchase scenarios.
-- **Tags**: first-time-buyers, financing
-- **Audience**: first-time buyers
-- **Compliance exposure**: none
-- **Angle**: What assistance programs exist for Utah first-time buyers (UHC, FirstHome, Score, HOME grants, county + city programs). Income limits, how they stack with FHA/conventional, and the realistic path for a buyer earning 50-80k.
-- **Why it ranks**: High intent, high volume, and the official pages are hard to read for a normal buyer.
-
-### 2. Rent vs. Buy in Utah 2026: When the Math Actually Works
-- **Primary keyword**: rent vs buy utah
-- **Volume gut-check**: high
-- **Competitor coverage gap**: https://www.nerdwallet.com/mortgages/rent-vs-buy-calculator (generic, no Utah context); local realtor blogs tend to one-side the answer. Nothing walks through actual Utah numbers with current rates and rents.
-- **Tags**: first-time-buyers, buying
-- **Audience**: first-time buyers, relocators
-- **Compliance exposure**: none
-- **Angle**: Walk through the renting-vs-buying math with real Salt Lake Valley rents (~$1,650-2,200), current rates (link to a fresh Freddie Mac reference), FHA down payment, and the 5-year wealth comparison. Point to the on-site calculator at `/rent-vs-buy/`.
-- **Why it ranks**: Pairs with the existing Rent vs Buy calculator — same keyword cluster, mutual link equity.
-
-### 3. Selling Your Utah Home in a Slower Market: Pricing, Prep, and Negotiation
-- **Primary keyword**: selling home utah slower market
+### 1. Radon Testing When Buying a Utah Home: Timing, Cost, and Negotiating Mitigation
+- **Primary keyword**: radon testing utah home purchase
 - **Volume gut-check**: med
-- **Competitor coverage gap**: Generic "how to sell your home" posts don't address pricing in a softening Utah market. Local realtor blogs often lean marketing-first.
-- **Tags**: selling, home-prep
+- **Competitor coverage gap**: https://deq.utah.gov/waste-management-and-radiation-control/testing-your-home-for-radon (general guidance); results are otherwise inspector franchise pages. Nobody connects radon to REPC due-diligence deadlines or who pays for mitigation.
+- **Tags**: buying, home-prep
+- **Audience**: all buyers; sellers prepping to list
+- **Compliance exposure**: none — cite Utah DEQ; no health claims beyond official guidance
+- **Angle**: Utah DEQ says 1 in 3 Utah homes has dangerous radon levels. Short-term tests vs. continuous monitors, scheduling the test early in due diligence, typical mitigation cost, and how to ask the seller to cover mitigation.
+- **Why it ranks**: Thin franchise pages own the results; a REALTOR-written, contract-aware guide can outrank them.
+
+### 2. Assumable FHA and VA Loans in Utah: How to Take Over a 3% Mortgage
+- **Primary keyword**: assumable mortgage utah
+- **Volume gut-check**: low
+- **Competitor coverage gap**: https://bestutahrealestate.com/news/va-loan-assumption-explained-how-it-works-for-utah-buyers (templated city pages); https://www.rocketmortgage.com/learn/what-is-an-assumable-mortgage (national); https://kutv.com/news/eye-on-your-money/little-known-option-could-save-home-buyers-1k-a-month-new-mortgages-professionals-real-estate (news, not a how-to).
+- **Tags**: financing, buying
+- **Audience**: first-time buyers, move-up buyers
+- **Compliance exposure**: none — no rate promises; "confirm with the loan servicer"
+- **Angle**: Where assumable loans cluster (Davis/Weber near Hill AFB, 2020-22 originations), finding them in MLS remarks, the 45-90 day servicer approval, the VA entitlement catch, and covering the equity gap with cash or a second loan.
+- **Why it ranks**: Low volume but very high intent while rates stay elevated, and good answers are scarce.
+
+### 3. Seller Closing Costs in Utah: What You'll Actually Net at Closing
+- **Primary keyword**: seller closing costs utah
+- **Volume gut-check**: med
+- **Competitor coverage gap**: https://listwithclever.com/real-estate-blog/seller-closing-costs-in-utah/, https://www.houzeo.com/blog/seller-closing-costs-utah/, https://www.realestatewitch.com/seller-closing-costs/utah/ — discount-brokerage lead funnels with conflicting figures (2.5% vs. 8-10%). None walks through a real Utah net sheet.
+- **Tags**: selling
 - **Audience**: sellers
-- **Compliance exposure**: none
-- **Angle**: Pricing strategy when the market cools (below-comp pricing to generate offers vs. hopeful list), what prep work is worth doing vs. skipping, seller concessions and rate buy-downs, and how to think about days-on-market risk.
-- **Why it ranks**: Current market reality makes this evergreen for the next 12-18 months. Sellers are actively searching this.
+- **Compliance exposure**: REALTOR code — commissions are negotiable post-NAR settlement; never state a "standard" rate
+- **Angle**: Line-by-line net sheet on a ~$530K home (current state median): no Utah transfer tax, owner's title policy, escrow splits under the REPC, buyer-agent compensation, concessions in today's price-cut market, and prorated taxes and HOA dues.
+- **Why it ranks**: High-intent seller query where the top results are lead-gen; fills the site's thinnest content area.
 
-### 4. Moving to Utah from California: What Nobody Tells You
-- **Primary keyword**: moving to utah from california
-- **Volume gut-check**: high
-- **Competitor coverage gap**: https://www.movebuddha.com/blog/moving-to-utah/ (generic); existing Utah blogs skew investor or lifestyle without buyer logistics.
-- **Tags**: relocation, buying
-- **Audience**: relocators
-- **Compliance exposure**: Fair Housing
-- **Angle**: Where CA transplants actually land (Lehi, Draper, St. George, Park City, Sandy), cost-of-living reality check vs. Bay Area / LA / SD, how to buy remotely with FaceTime walk-throughs, state tax differences, HOA culture shock, snow / altitude, and the first-week logistics (DMV, utilities).
-- **Why it ranks**: High-intent relocator traffic — these buyers are committed and high-value.
-
-### 5. Utah FHA vs. Conventional Loan: Which One Wins For Your First Home?
-- **Primary keyword**: utah fha vs conventional loan
-- **Volume gut-check**: med
-- **Competitor coverage gap**: Generic national comparisons dominate. Nothing weighs Utah-specific factors (UHC compatibility, local lenders, DPA stacking).
-- **Tags**: financing, first-time-buyers
-- **Audience**: first-time buyers
-- **Compliance exposure**: none
-- **Angle**: Side-by-side on down payment (3.5% vs. 3% conventional), MI treatment (FHA for life vs. drops off), DTI thresholds, how Utah DPA programs pair with each loan type, and which situations tip the scale either way.
-- **Why it ranks**: Lender comparison search intent is high and the honest Utah-specific breakdown is missing.
-
-### 6. Buying New Construction vs. Resale in Utah: The Honest Tradeoffs
-- **Primary keyword**: new construction vs resale utah
-- **Volume gut-check**: med
-- **Competitor coverage gap**: Builder-site blogs are biased; buyer-side honest treatment in Utah market is scarce.
-- **Tags**: buying, neighborhoods
-- **Audience**: all buyers
-- **Compliance exposure**: none
-- **Angle**: Where new construction concentrates (Lehi, Saratoga Springs, Eagle Mountain, St. George), typical price premiums vs. nearby resale, rate buy-down incentives from builders, HOA structure, timeline risk, inspection must-haves on new builds, and when resale wins (location, lot size, mature trees).
-- **Why it ranks**: Utah's growth-market boom makes this a live question for most buyers under $600k.
-
-### 7. The Best Utah Suburbs for Young Families in 2026
-- **Primary keyword**: best utah suburbs young families
-- **Volume gut-check**: high
-- **Competitor coverage gap**: https://www.niche.com/places-to-live/t/best-suburbs-utah/ (ranks school data without buyer context); local realtor lists are often paid or stale.
-- **Tags**: neighborhoods, buying
-- **Audience**: move-up buyers, relocators
-- **Compliance exposure**: Fair Housing — DO NOT describe tenants or communities by protected class
-- **Angle**: Ranked list with honest criteria — school ratings, median home price, commute times to major employers (SLC downtown, Silicon Slopes, Lehi campuses), parks per capita, how the suburb has changed in the last 3 years. Spotlight: Highland, Alpine, Mapleton, Kaysville, Herriman.
-- **Why it ranks**: Evergreen high-volume search with high-intent buyers.
-
-### 8. Utah Housing Market Update: What to Expect in [Current Quarter/Year]
-- **Primary keyword**: utah housing market 2026
-- **Volume gut-check**: high
-- **Competitor coverage gap**: Local news covers numbers but not actionable implications. Zillow and Redfin give data without a buyer-side/seller-side interpretation.
-- **Tags**: market-updates, buying
-- **Audience**: all
-- **Compliance exposure**: none — but avoid predicting prices with specific numbers
-- **Angle**: Current median prices by county (SLC, Utah, Davis, Weber), days-on-market, year-over-year change, rate outlook (link to Freddie Mac PMMS), inventory levels, and 3 actionable takeaways for buyers, 3 for sellers. Flag: this is a dated post — rewrite every ~90 days.
-- **Why it ranks**: Fresh market content drives recurring search traffic and establishes authority. Tag it noindex-after-180-days if you want to avoid stale ranking.
-
-### 9. Staging Your Utah Home: What Actually Pays Off at Resale
-- **Primary keyword**: staging utah home resale
-- **Volume gut-check**: med
-- **Competitor coverage gap**: Generic HGTV-style advice doesn't account for Utah buyer demographics (younger, more families, different tastes than Sun Belt).
-- **Tags**: selling, home-prep
-- **Audience**: sellers
-- **Compliance exposure**: Fair Housing — don't profile buyers by demographic
-- **Angle**: What actually moves the needle on sale price (fresh paint, decluttered kitchens, neutral-but-not-beige palettes, front yard curb appeal, fall vs. spring listing prep) and what is pure cost sink. Specific items to leave vs. haul.
-- **Why it ranks**: Seller-focused with a Utah lens — fills a gap between generic staging advice and pricey professional stagers.
-
-### 10. 1031 Exchange in Utah: Timing, Qualified Intermediaries, and the Replacement Hunt
-- **Primary keyword**: utah 1031 exchange
-- **Volume gut-check**: med
-- **Competitor coverage gap**: Most 1031 articles are national and dry. Utah-specific execution (QI options in-state, Utah replacement property availability in current market) is uncovered.
-- **Tags**: investing, financing
-- **Audience**: investors
-- **Compliance exposure**: tax/legal — must reference "consult a Utah-licensed CPA"
-- **Angle**: Timeline mechanics (45/180), picking a Qualified Intermediary in Utah, current Utah replacement property options by county, reverse exchanges when inventory is tight, and the common mistake investors make when the 45-day window hits in a slow market.
-- **Why it ranks**: Investor search volume is steady; pairs tightly with the `/real-estate-investing/1031-exchange/` service page for internal link equity.
+### 4. Retiring in Holladay, Utah: Downsizing, 55+ Options, and the Real Cost
+- **Primary keyword**: retire in holladay utah (secondary: downsizing salt lake county)
+- **Volume gut-check**: low
+- **Competitor coverage gap**: https://stacker.com/stories/utah/best-places-retire-utah (Niche-ranked list, no buyer context); https://www.55places.com/utah/area/salt-lake-city-area (directory only). No REALTOR-side guide on downsizing within the Salt Lake Valley.
+- **Tags**: neighborhoods, relocation
+- **Audience**: move-down buyers (empty nesters, retirees)
+- **Compliance exposure**: Fair Housing — 55+ communities under HOPA may be described; don't steer by age or family status otherwise. Tax/legal for retirement-income taxation.
+- **Angle**: Why Holladay ranks high for retirees (established neighborhoods, healthcare access, canyon proximity), what downsizing within Salt Lake County looks like, nearby 55+ options (Millcreek, South Jordan), selling the family home first vs. buying first, and how Utah taxes retirement income.
+- **Why it ranks**: Local downsizers are a real, high-equity audience and nobody writes for them by city.
 
 ---
 
 ## Published (auto-maintained by weekly routine)
 
 _Entries move here after the weekly routine publishes them._
+
+- [x] 2026-11-19 - Utah's 45% Primary Residential Exemption: The New Filing Rule Every Homebuyer Needs to Know (2027)
 
 ---
 
