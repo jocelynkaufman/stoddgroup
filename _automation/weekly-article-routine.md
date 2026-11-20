@@ -57,7 +57,7 @@ Write the article body:
 
 **Required exclusions:**
 - No `<h1>` in body HTML (template renders it from the topic title)
-- No hero image, author bio, CTA band, or related reading section in body (template adds those where applicable)
+- No hero image, author bio card, or "Ready to Take Action?" CTA band in body (template already includes the static Jocelyn Stoddard bio card right after your body content, and the CTA band after the article closes — don't duplicate).
 
 ### STEP 3 — Build the article files (silent)
 
@@ -66,7 +66,11 @@ Write the article body:
    ```html
    <a href="/blog/tag/<slug>/" class="text-sm bg-brand-light-green text-brand-dark-green px-3 py-1 rounded font-medium hover:bg-brand-green/40 transition">Display Label</a>
    ```
-3. Build `{{SCHEMA_SCRIPTS}}` with a BlogPosting + BreadcrumbList pair (copy pattern from any existing Stodd Group article, e.g. `best-utah-cities-house-hacking-2026/index.html`). Author = Jocelyn Stoddard (`/about/`), publisher = Stodd Group Real Estate (`#organization`).
+3. Build `{{SCHEMA_SCRIPTS}}` with a BlogPosting + BreadcrumbList pair (copy pattern from `utah-adu-house-hacking/index.html` — it has the correct BlogPosting shape). The author Person MUST include `"sameAs":["https://www.linkedin.com/in/jocelyn-stoddard-a233b147"]` so Google can connect the article to Jocelyn's LinkedIn identity. Full author block:
+   ```json
+   "author":{"@type":"Person","name":"Jocelyn Stoddard","url":"https://stoddgroup.com/about/","sameAs":["https://www.linkedin.com/in/jocelyn-stoddard-a233b147"]}
+   ```
+   Publisher = Stodd Group Real Estate (`https://stoddgroup.com/#organization`).
 
 Generate the branded social card (1200x630 WebP) using the topic's primary tag for the palette:
 
