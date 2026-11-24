@@ -50,6 +50,7 @@ Write the article body:
 - **If topic flagged `city rules`:** Say "confirm current rules with the city's planning department before offering on anything." Link to utah.gov or the specific city's website.
 - **If topic flagged `Fair Housing`:** Never reference protected classes when describing tenants, buyers, or neighborhoods. "Young professionals near the U" is fine; "singles", "families", or "ethnic community" as a buyer or tenant target is not.
 - **If topic flagged `REALTOR code`:** Avoid any phrasing that could be read as steering, puffery, or an undisclosed agency relationship. Jocelyn's REALTOR status and Stodd Group affiliation are implicit in the chrome — no need to spell them out in body.
+- **If topic flagged `health`:** Used for anything health-safety related in a home — radon, lead paint, mold, asbestos, air/water quality, carbon monoxide, wildfire smoke, meth-exposure testing, well-water contamination, etc. Cite EPA, CDC, Utah Department of Health and Human Services, or the Utah DEQ as sources. Recommend a certified home inspector, licensed abatement/remediation contractor, or accredited testing lab — never offer a personal health-risk assessment or specific remediation prescription. Don't quantify health risk ("X% risk of cancer") unless it's a direct quote from a cited authority. Advise readers to test, confirm with a certified professional, and treat findings as a negotiation lever during the inspection period, not DIY medical interpretation.
 
 **Required inclusions:**
 - 2-4 inline links to existing Stodd Group articles or service pages (descriptive anchor text, never "click here"). Service pages to link to where relevant: `/buying-a-house/`, `/buying-a-house/first-time-buyers/`, `/buying-a-house/out-of-state/`, `/selling/`, `/real-estate-investing/`, `/real-estate-investing/house-hacking/`, `/real-estate-investing/brrrr/`, `/real-estate-investing/short-term-rentals/`, `/real-estate-investing/1031-exchange/`, `/real-estate-investing/cost-segregation/`, `/rent-vs-buy/`, `/markets-we-serve/`.
@@ -85,7 +86,7 @@ python3 _automation/generate-hero.py \
 
 This writes `<slug>/hero.webp`. **Not rendered on-page** — it's used only as the `og:image` / `twitter:image` meta (social preview card). Article pages read cleanly from title → tags → body, with no hero image above the body. The template already references `<slug>/hero.webp` in the OG meta via the SLUG token.
 
-Run a claim-audit scan: count every `\d+%`, `\$[\d,]+`, mention of Utah law or statute, mention of a specific city's licensing or zoning. Collect for the chat preview.
+Run a claim-audit scan: count every `\d+%`, `\$[\d,]+`, mention of Utah law or statute, mention of a specific city's licensing or zoning. Collect for the chat preview. Also flag ANY city mentioned outside the 8-county service area (see top of this prompt) — those should be removed or re-anchored to an in-area example.
 
 Update `sitemap.xml` with the new article URL (lastmod today, changefreq yearly, priority 0.6).
 
@@ -193,3 +194,4 @@ If Jocelyn doesn't reply within 24 hours:
 - Do not research for more than ~30 min of session time before posting the draft. First draft in chat > polishing in silence.
 - Do not source or use photos for the hero. The hero is always the generated branded WebP — nothing else.
 - Do not add an on-page hero image above the article body. Stodd Group's design is title → pills → body, with no header image.
+- Do not anchor city or neighborhood examples to markets outside the 8-county service area listed above (no St. George, Cedar City, Moab, etc.).

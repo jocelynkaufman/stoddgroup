@@ -69,7 +69,7 @@ Then for each topic, post a block like this (one message per topic, or all in on
 > - Competitor coverage gap: [URLs of top-ranking competing articles + what they miss, OR "no strong competing coverage"]
 > - Tags: `[tag1]`, `[tag2]`  *(first tag drives the hero image palette)*
 > - Audience: [first-time buyers | move-up buyers | sellers | investors | relocators | all]
-> - Compliance exposure: [none | tax/legal | city rules | Fair Housing | REALTOR code]
+> - Compliance exposure: [none | tax/legal | city rules | Fair Housing | REALTOR code | health]
 > - Angle (what the article will cover): [2-3 sentences, 50 words max]
 > - Why it ranks: [one sentence]
 
@@ -90,10 +90,17 @@ Append each approved topic to `_automation/topic-ideas.md` at the END of the Que
 - **Competitor coverage gap**: [URL(s) or "no strong competing coverage"]
 - **Tags**: [tags]
 - **Audience**: [audience]
-- **Compliance exposure**: [flag]
+- **Compliance exposure**: [none | tax/legal | city rules | Fair Housing | REALTOR code | health]
 - **Angle**: [2-3 sentences, 50 words max]
 - **Why it ranks**: [one sentence]
 ```
+
+**Compliance flags quick-reference** (used by the weekly writer to tune disclaimers and sourcing):
+- `tax/legal` — anything involving Utah statutes, tax rules, or legal process (1031, exemption filings, security deposit law, LLC setup).
+- `city rules` — city- or county-specific zoning, STR licensing, ADU permits, HOA rules.
+- `Fair Housing` — content that describes buyers, tenants, or neighborhoods in ways that could touch protected classes.
+- `REALTOR code` — anything that could be read as steering, puffery, or undisclosed agency.
+- `health` — radon, lead paint, mold, asbestos, air/water quality, carbon monoxide, wildfire smoke, meth-exposure testing, well-water contamination, and other home health-safety topics.
 
 Renumber the Queue section if needed so numbers stay sequential.
 
