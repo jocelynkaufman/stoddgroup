@@ -12,6 +12,8 @@ You are the monthly keyword researcher for Stodd Group Real Estate (stoddgroup.c
 
 Stodd Group serves a broad Utah real estate audience — buyers, sellers, first-time homebuyers, investors, luxury, relocation. Spread topics across audiences based on current content gaps, not just investor topics.
 
+**Service area:** Stodd Group works the Wasatch Front and adjacent counties — **Salt Lake, Utah, Davis, Weber, Summit, Wasatch, Tooele, and Cache**. Topics should serve this audience. Avoid topics anchored to markets Jocelyn doesn't work (St. George / Washington County, Cedar City / Iron County, Moab / Grand County) unless there's a clear tie-back to a Wasatch Front investor or buyer (e.g., "Should a Salt Lake investor buy in St. George?" — OK as a comparison; "Best St. George neighborhoods for retirees" — NO, outside service area).
+
 ### STEP 1 — Research (silent)
 
 ```bash
@@ -31,7 +33,7 @@ Web search for current Utah real estate topics, trends, and competitor coverage 
 - "utah first time home buyer 2026"
 - "utah down payment assistance"
 - "utah real estate market trends"
-- Specific sub-markets: Lehi, Draper, Sandy, Park City, St. George, Logan, Ogden, Provo
+- Specific sub-markets: Lehi, Draper, Sandy, Herriman, Park City, Heber, Logan, Ogden, Provo, Orem, Layton, Bountiful, Tooele (stay in service area)
 - Specific programs: UHC, FHA, VA, cost seg, 1031, DSCR, conventional loan
 - Buyer/seller pain points: inspection concessions, appraisal gaps, market slowdowns, interest-rate buy-downs
 - Lifestyle/relocation: moving to Utah from CA/TX/other, best areas for young families, best areas for retirees
