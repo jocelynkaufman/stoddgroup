@@ -8,17 +8,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 
 ## Queue (next to publish, top first)
 
-### 1. Radon Testing When Buying a Utah Home: Timing, Cost, and Negotiating Mitigation
-- **Primary keyword**: radon testing utah home purchase
-- **Volume gut-check**: med
-- **Competitor coverage gap**: https://deq.utah.gov/waste-management-and-radiation-control/testing-your-home-for-radon (general guidance); results are otherwise inspector franchise pages. Nobody connects radon to REPC due-diligence deadlines or who pays for mitigation.
-- **Tags**: buying, home-prep
-- **Audience**: all buyers; sellers prepping to list
-- **Compliance exposure**: none — cite Utah DEQ; no health claims beyond official guidance
-- **Angle**: Utah DEQ says 1 in 3 Utah homes has dangerous radon levels. Short-term tests vs. continuous monitors, scheduling the test early in due diligence, typical mitigation cost, and how to ask the seller to cover mitigation.
-- **Why it ranks**: Thin franchise pages own the results; a REALTOR-written, contract-aware guide can outrank them.
-
-### 2. Utah Housing Market Forecast 2027: Prices, Inventory, and Rates
+### 1. Utah Housing Market Forecast 2027: Prices, Inventory, and Rates
 - **Primary keyword**: utah housing market 2027
 - **Volume gut-check**: med (peaks Dec–Feb)
 - **Competitor coverage gap**: https://www.noradarealestate.com/blog/what-new-forecasts-say-about-the-utah-housing-market-from-2025-to-2027/ (aggregator); https://www.kuer.org/business-economy/2026-01-07/utahs-housing-market-is-expected-to-be-running-in-place-in-2026 and https://www.axios.com/local/salt-lake-city/2025/12/08/salt-lake-housing-market-2026-forecast cover 2026 and are stale.
@@ -28,7 +18,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: Summarize the Gardner Policy Institute / James Wood outlook (~$572K average), Salt Lake Board of Realtors projection (~$560K median), and ~4% appreciation estimates, plus inventory +6.5% YoY and median sold price -3.4%. DATED: best published by early January; pull the latest Wood/UAR numbers at write time.
 - **Why it ranks**: Forecast searches spike in January and current results are a year old.
 
-### 3. Utah Down Payment Assistance in 2027: UHC FirstHome, Score, and County Programs Compared
+### 2. Utah Down Payment Assistance in 2027: UHC FirstHome, Score, and County Programs Compared
 - **Primary keyword**: utah down payment assistance
 - **Volume gut-check**: high
 - **Competitor coverage gap**: https://themortgagereports.com/137588/utah-down-payment-assistance-by-city, https://www.bankrate.com/mortgages/utah-first-time-homebuyer-assistance-programs, https://askdoss.com/down-payment-assistance-in-utah-2026/ — national lender pages with conflicting FirstHome caps ($25K vs. $27.5K); none shows how programs stack or what each does to the monthly payment.
@@ -38,7 +28,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: UHC FirstHome, Score, and HomeAgain; the state's $20K 0% new-construction loan (homes ≤$450K, repaid on sale); Utah County Loan to Own and Provo Home Purchase Plus (up to $40K); Davis County ($7.5K); Salt Lake Board of Realtors grants.
 - **Why it ranks**: Biggest first-time-buyer gap on the site — no article covers UHC — with strong volume and high intent.
 
-### 4. Seller Closing Costs in Utah: What You'll Actually Net at Closing
+### 3. Seller Closing Costs in Utah: What You'll Actually Net at Closing
 - **Primary keyword**: seller closing costs utah
 - **Volume gut-check**: med
 - **Competitor coverage gap**: https://listwithclever.com/real-estate-blog/seller-closing-costs-in-utah/, https://www.houzeo.com/blog/seller-closing-costs-utah/, https://www.realestatewitch.com/seller-closing-costs/utah/ — discount-brokerage lead funnels with conflicting figures (2.5% vs. 8-10%). None walks through a real Utah net sheet.
@@ -48,7 +38,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: Line-by-line net sheet on a ~$530K home (current state median): no Utah transfer tax, owner's title policy, escrow splits under the REPC, buyer-agent compensation, concessions in today's price-cut market, and prorated taxes and HOA dues.
 - **Why it ranks**: High-intent seller query where the top results are lead-gen; fills the site's thinnest content area.
 
-### 5. Moving to Utah from California: Where Californians Buy and What Changes
+### 4. Moving to Utah from California: Where Californians Buy and What Changes
 - **Primary keyword**: moving to utah from california
 - **Volume gut-check**: med
 - **Competitor coverage gap**: https://bestutahrealestate.com/news/leaving-california-for-utah-what-to-know-before-you-move (templated), https://www.storagecafe.com/blog/moving-from-california-to-utah/ (mover blog) — no city-to-market comparisons or out-of-state buying process.
@@ -58,7 +48,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: Price-per-square-foot comparisons, Utah's flat income tax vs. California brackets, lower salaries, lower property taxes, winter driving and water rights, common landing spots (Lehi, Draper, St. George, Park City), and a remote-purchase checklist.
 - **Why it ranks**: California is the top relocation source and the site has no out-of-state relocation content.
 
-### 6. When Is the Best Time to Sell a House in Utah? Month-by-Month Data
+### 5. When Is the Best Time to Sell a House in Utah? Month-by-Month Data
 - **Primary keyword**: best time to sell a house in utah
 - **Volume gut-check**: med
 - **Competitor coverage gap**: https://listwithclever.com/real-estate-blog/best-time-to-sell-a-home-in-utah/, https://www.homelight.com/blog/best-time-to-sell-a-house-in-utah/, https://www.houzeo.com/blog/?p=157249 — lead-gen pages that contradict each other (June vs. September vs. May); none accounts for snow, school calendars, or Wasatch Front vs. St. George.
@@ -68,7 +58,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: Days on market by month (~32 in May vs. ~71 in January), price vs. speed tradeoffs, the low-competition case for winter listings, a list-ready timeline working back from a spring date, and how St. George's season differs.
 - **Why it ranks**: Second seller topic in the queue; publishing in winter catches spring sellers while they plan.
 
-### 7. 1031 Exchanges in Utah: Rules, Timelines, and Trading Up Without the Tax Bill
+### 6. 1031 Exchanges in Utah: Rules, Timelines, and Trading Up Without the Tax Bill
 - **Primary keyword**: 1031 exchange utah
 - **Volume gut-check**: med
 - **Competitor coverage gap**: https://www.ipx1031.com/utah, https://www.steadily.com/blog/utah-1031-exchange-rules-for-real-estate-investors, https://1031nationwide.com/Utah — facilitator boilerplate; none covers the buy side (finding a replacement in 45 days in Utah's market).
@@ -78,7 +68,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: 45/180-day deadlines, qualified intermediaries, equal-or-greater value and debt replacement, Utah's flat income tax on undeferred gains, converting a house hack into a 1031, and identification strategies in a thin market.
 - **Why it ranks**: The site has many investor articles but no 1031 guide; an agent-written version beats facilitator boilerplate.
 
-### 8. Assumable FHA and VA Loans in Utah: How to Take Over a 3% Mortgage
+### 7. Assumable FHA and VA Loans in Utah: How to Take Over a 3% Mortgage
 - **Primary keyword**: assumable mortgage utah
 - **Volume gut-check**: low
 - **Competitor coverage gap**: https://bestutahrealestate.com/news/va-loan-assumption-explained-how-it-works-for-utah-buyers (templated city pages); https://www.rocketmortgage.com/learn/what-is-an-assumable-mortgage (national); https://kutv.com/news/eye-on-your-money/little-known-option-could-save-home-buyers-1k-a-month-new-mortgages-professionals-real-estate (news, not a how-to).
@@ -88,7 +78,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: Where assumable loans cluster (Davis/Weber near Hill AFB, 2020-22 originations), finding them in MLS remarks, the 45-90 day servicer approval, the VA entitlement catch, and covering the equity gap with cash or a second loan.
 - **Why it ranks**: Low volume but very high intent while rates stay elevated, and good answers are scarce.
 
-### 9. Retiring in Holladay, Utah: Downsizing, 55+ Options, and the Real Cost
+### 8. Retiring in Holladay, Utah: Downsizing, 55+ Options, and the Real Cost
 - **Primary keyword**: retire in holladay utah (secondary: downsizing salt lake county)
 - **Volume gut-check**: low
 - **Competitor coverage gap**: https://stacker.com/stories/utah/best-places-retire-utah (Niche-ranked list, no buyer context); https://www.55places.com/utah/area/salt-lake-city-area (directory only). No REALTOR-side guide on downsizing within the Salt Lake Valley.
@@ -104,6 +94,7 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 
 _Entries move here after the weekly routine publishes them._
 
+- [x] 2026-11-23 - Radon Testing When Buying a Utah Home: Timing, Cost, and Negotiating Mitigation
 - [x] 2026-11-19 - Utah's 45% Primary Residential Exemption: The New Filing Rule Every Homebuyer Needs to Know (2027)
 
 ---
