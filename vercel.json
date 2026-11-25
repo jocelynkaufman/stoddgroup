@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/call",
+      "destination": "https://go.stoddgroup.com/widget/bookings/intro-call-stodd-group",
+      "permanent": false
+    }
+  ]
+}
