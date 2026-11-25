@@ -55,7 +55,7 @@ Write the article body:
 **Required inclusions:**
 - 2-4 inline links to existing Stodd Group articles or service pages (descriptive anchor text, never "click here"). Service pages to link to where relevant: `/buying-a-house/`, `/buying-a-house/first-time-buyers/`, `/buying-a-house/out-of-state/`, `/selling/`, `/real-estate-investing/`, `/real-estate-investing/house-hacking/`, `/real-estate-investing/brrrr/`, `/real-estate-investing/short-term-rentals/`, `/real-estate-investing/1031-exchange/`, `/real-estate-investing/cost-segregation/`, `/rent-vs-buy/`, `/markets-we-serve/`.
 - 1-2 outbound links to authoritative sources (`target="_blank" rel="noopener"`)
-- **Every link to the Stodd Group booking calendar MUST use this exact URL:** `https://go.stoddgroup.com/widget/bookings/intro-call-stodd-group-website?utm_source=stoddgroup&utm_medium=website&utm_campaign=book_call`. Do not vary the UTM params per article — a single `utm_campaign=book_call` is the site-wide standard.
+- **Every link to the Stodd Group booking calendar MUST use this exact URL:** `https://go.stoddgroup.com/widget/bookings/intro-call-stodd-group-website?utm_source=stoddgroup&utm_medium=website&utm_campaign=book_call&booking_source=stoddgroup.com`. Do not vary the UTM params per article — a single `utm_campaign=book_call` is the site-wide standard.
 - Clear takeaway at the end — what should the reader do next
 
 **Required exclusions:**
