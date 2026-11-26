@@ -21,7 +21,7 @@ cd "/Users/jocelynkaufman/Claude/Stodd Group Website"
 git pull origin main
 ```
 
-Read `_automation/topic-ideas.md` and pick the FIRST unchecked topic (`- [ ]`) in the Queue section. Capture every field: title, primary keyword, tags, compliance exposure, angle, why-it-ranks.
+Read `_automation/topic-ideas.md` and pick the FIRST unchecked topic (`- [ ]`) in the Queue section. Capture every field: title, primary keyword, tags, compliance exposure, angle, why-it-ranks, **and the Competitor coverage gap URLs**.
 
 Read `_templates/article.html` for the HTML template with all `{{PLACEHOLDER}}` tokens.
 
@@ -29,19 +29,29 @@ Read 2 existing articles that share this topic's tags to internalize voice. Cand
 - `best-utah-cities-house-hacking-2026/index.html`
 - `utah-adu-house-hacking/index.html`
 - `second-house-hack-utah/index.html`
-- `the-ultimate-guide-to-renting-vs-buying-a-home-in-utah/index.html`
+- `utah-primary-residential-exemption-2027/index.html`
+- `radon-testing-utah-home-purchase/index.html`
 
 List existing article slugs for internal linking + duplication check.
 
 ### STEP 2 — Research & write (silent)
 
+**Open the competitor gap FIRST.** The topic queue entry has a `Competitor coverage gap` field. Open 1-2 of those top-ranking competing URLs and note what they miss (depth, local specificity, worked examples, current data, an actionable checklist, a concrete step-by-step). Your article must **deliberately address those gaps** — don't restate the same generic overview that already ranks. You'll report what you undercut in the chat preview under "Competitor gap addressed:".
+
 Web search the primary keyword for current Utah context. Open 2-3 authoritative sources (Zillow Research, Redfin, HUD, St. Louis Fed, utah.gov, Utah Housing Corporation, Utah Association of Realtors). Note 1-2 you'll cite inline.
+
+Also run a quick "People Also Ask" / related-search check for the primary keyword — capture the exact natural-language questions real users are asking. You'll use 3–5 of these verbatim in the required FAQ section (see Required inclusions).
 
 Write the article body:
 - **Length**: 1,500-2,500 words
-- **Structure**: 5-8 H2 sections, H3 sub-sections where helpful
+- **Structure**: 5-8 H2 sections, H3 sub-sections where helpful. The LAST H2 must be `Frequently Asked Questions` (see FAQ requirement below).
 - **Voice**: warm, practical, second person where natural. No hype.
 - **Audience match**: if the topic is for first-time buyers, write for them; if it's for investors, write for them. Don't force every post into one lane.
+
+**Keyword placement (critical — do not skip):**
+- The topic's **primary keyword** MUST appear in: the `<title>` tag, the H1 (template renders from title — if the primary keyword isn't already in the title, adjust the title so it is), the URL slug, the **meta description** (≤160 chars, keyword in the first half, with an action verb), the **first 100 words** of the body, and **at least one H2**. It should also appear naturally 2–3 more times in the body copy.
+- Include **4–6 semantic variants / LSI terms** throughout — related concepts a knowledgeable REALTOR would use alongside the primary keyword (e.g., for "Utah first-time home buyer": "down payment assistance," "FHA loan," "UHC program," "pre-approval," "closing costs," "earnest money").
+- Never keyword-stuff. If a phrase feels forced, rework the sentence instead.
 
 **Hard compliance rules (adjust tone per the Compliance exposure flag in the topic):**
 
@@ -56,6 +66,7 @@ Write the article body:
 - 2-4 inline links to existing Stodd Group articles or service pages (descriptive anchor text, never "click here"). Service pages to link to where relevant: `/buying-a-house/`, `/buying-a-house/first-time-buyers/`, `/buying-a-house/out-of-state/`, `/selling/`, `/real-estate-investing/`, `/real-estate-investing/house-hacking/`, `/real-estate-investing/brrrr/`, `/real-estate-investing/short-term-rentals/`, `/real-estate-investing/1031-exchange/`, `/real-estate-investing/cost-segregation/`, `/rent-vs-buy/`, `/markets-we-serve/`.
 - 1-2 outbound links to authoritative sources (`target="_blank" rel="noopener"`)
 - **Every link to the Stodd Group booking calendar MUST use this exact URL:** `https://go.stoddgroup.com/widget/bookings/intro-call-stodd-group-website?utm_source=stoddgroup&utm_medium=website&utm_campaign=book_call&booking_source=stoddgroup.com`. Do not vary the UTM params per article — a single `utm_campaign=book_call` is the site-wide standard.
+- **FAQ section — REQUIRED, not optional.** End the body with an `<h2>Frequently Asked Questions</h2>` block containing **3–5 Q&A pairs**. Use the real "People Also Ask" question phrasing you captured above (exact natural-language wording — don't rephrase them into blog-voice titles). Format each as an `<h3>` question + 1–2 short paragraph answer. This single section captures long-tail SERP real estate and PAA slots, and feeds the FAQPage schema in STEP 3.
 - Clear takeaway at the end — what should the reader do next
 
 **Required exclusions:**
@@ -69,11 +80,22 @@ Write the article body:
    ```html
    <a href="/blog/tag/<slug>/" class="text-sm bg-brand-light-green text-brand-dark-green px-3 py-1 rounded font-medium hover:bg-brand-green/40 transition">Display Label</a>
    ```
-3. Build `{{SCHEMA_SCRIPTS}}` with a BlogPosting + BreadcrumbList pair (copy pattern from `utah-adu-house-hacking/index.html` — it has the correct BlogPosting shape). The author Person MUST include `"sameAs":["https://www.linkedin.com/in/jocelyn-stoddard-a233b147"]` so Google can connect the article to Jocelyn's LinkedIn identity. Full author block:
+3. Build `{{SCHEMA_SCRIPTS}}` with **three** JSON-LD blocks: BlogPosting + BreadcrumbList + FAQPage (copy the BlogPosting + BreadcrumbList pattern from `utah-adu-house-hacking/index.html`). The author Person MUST include `"sameAs":["https://www.linkedin.com/in/jocelyn-stoddard-a233b147"]` so Google can connect the article to Jocelyn's LinkedIn identity. Full author block:
    ```json
    "author":{"@type":"Person","name":"Jocelyn Stoddard","url":"https://stoddgroup.com/about/","sameAs":["https://www.linkedin.com/in/jocelyn-stoddard-a233b147"]}
    ```
    Publisher = Stodd Group Real Estate (`https://stoddgroup.com/#organization`).
+
+   **FAQPage schema** — mirror every on-page Q&A pair from the FAQ section:
+   ```json
+   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+     {"@type":"Question","name":"<exact on-page question text>","acceptedAnswer":{"@type":"Answer","text":"<on-page answer, plain text — strip HTML tags>"}},
+     ...
+   ]}
+   ```
+   The `name` must match the on-page `<h3>` verbatim, and the `text` must contain the exact answer text (HTML stripped, no paraphrasing). Mismatches between the page and the schema trigger Google Search Console warnings.
+
+   **`dateModified` discipline** — for brand-new articles, `dateModified` equals `datePublished` (today, ISO `YYYY-MM-DD`). Whenever you later edit an existing article — including the reverse-linking step below, or any other revision — update that article's BlogPosting `dateModified` to the revision date. Google uses `dateModified` to reward content freshness; without an updated stamp the edit is invisible to ranking.
 
 Generate the branded social card (1200x630 WebP) using the topic's primary tag for the palette:
 
@@ -106,7 +128,21 @@ Update `sitemap.xml` with the new article URL (lastmod today, changefreq yearly,
    
    On that service page, add a card to the "Related Articles" / "Investor Resources" / "Buyer Resources" grid (copy the exact pattern from an existing card on that page — already image-free).
 
-Verify after inserting: `grep -l "<slug>" blog/index.html blog/tag/*/index.html buying-a-house/*/index.html real-estate-investing/*/index.html selling/index.html` should show every page you intended to update.
+**Reverse topic-cluster linking** (the biggest 2026 ranking lever — do not skip):
+
+New articles rank faster and higher when they receive contextual links **from existing posts in the same topic cluster**, not just from the blog hub. Identify **2–3 existing articles** that cover the closest related topics — use the tags, the primary keyword, and `grep` across slugs if needed. In each of those articles:
+
+1. Add **ONE natural contextual sentence** inside the body content (not in the CTA band, author bio, or disclaimer) that links to the new article with descriptive anchor text — never "click here," never "read more." Example in `the-beginners-guide-to-house-hacking-in-utah/index.html`: "For a 2026 look at which Utah cities make the best house-hacking markets, see our [recent ranking](/best-utah-cities-house-hacking-2026/)."
+2. **Update that article's BlogPosting `dateModified` field** to today's ISO date (`YYYY-MM-DD`). If the existing article doesn't already have a `dateModified` property in its schema, add one — it's a one-line edit and compounds every future revision. Do NOT add BlogPosting schema from scratch to articles that lack it; that's for a separate SEO audit pass.
+
+Record which articles you updated — you'll report them in the chat preview as "Reverse links added:". A new article with no cluster back-links is a dead-end; Google treats it as isolated regardless of how good the copy is.
+
+Verify after inserting:
+```bash
+grep -l "<slug>" blog/index.html blog/tag/*/index.html buying-a-house/*/index.html real-estate-investing/*/index.html selling/index.html
+# separately, confirm the reverse-link anchor text landed in each updated article:
+grep -l "/<slug>/" <reverse-linked-slug-1>/index.html <reverse-linked-slug-2>/index.html
+```
 
 ### STEP 4 — Post preview in chat
 
@@ -121,12 +157,13 @@ Open with:
 
 Attach the generated social card (`<slug>/hero.webp`) so Jocelyn sees what the OG preview will look like when shared.
 
-Then post the section outline (H2s only):
+Then post the section outline (H2s only — include the final "Frequently Asked Questions" H2):
 
 > **Section outline:**
 > 1. [H2 #1]
 > 2. [H2 #2]
 > ...
+> N. Frequently Asked Questions
 
 Then post the opening paragraph(s) as a preview:
 
@@ -134,16 +171,19 @@ Then post the opening paragraph(s) as a preview:
 >
 > [first ~150 words of the article, as written]
 
-Then post links and claim audit:
+Then post links, reverse-links, competitor gap, FAQ list, and claim audit:
 
 > **Internal links used:** [list of /slug/ or /service-page/ links]
 > **Outbound sources cited:** [list of URLs]
+> **Reverse links added:** [list of existing-article slugs that now link back to this new article, with the one-line anchor-text snippet added to each]
+> **Competitor gap addressed:** [one line on what the top-ranking competing article(s) missed and how this article undercuts that gap]
+> **FAQ questions:** [the 3–5 PAA questions included in the FAQ section]
 >
 > **Claim audit:** [every numeric claim, statute reference, or city-rule mention worth your eyes — if none, say "no sensitive claims"]
 
 Close with:
 
-> Approve to publish, or tell me what to change (e.g., "shorten section 3", "add a UHC reference", "soften the risk section", "pick a different related article", "regenerate the hero with a different tag").
+> Approve to publish, or tell me what to change (e.g., "shorten section 3", "add a UHC reference", "soften the risk section", "swap one of the FAQs", "pick a different reverse-link target", "regenerate the hero with a different tag").
 
 ### STEP 5 — Handle Jocelyn's response
 
@@ -155,8 +195,9 @@ git add <slug>/ sitemap.xml _automation/topic-ideas.md \
     blog/tag/*/index.html \
     buying-a-house/index.html buying-a-house/first-time-buyers/index.html \
     buying-a-house/out-of-state/index.html selling/index.html \
-    real-estate-investing/index.html real-estate-investing/*/index.html
-git status --short  # verify only the files you touched are staged
+    real-estate-investing/index.html real-estate-investing/*/index.html \
+    <reverse-linked-slug-1>/index.html <reverse-linked-slug-2>/index.html [<reverse-linked-slug-3>/index.html]
+git status --short  # verify ONLY the files you touched are staged — new article + listing pages + the 2-3 reverse-linked articles
 git commit -m "Weekly article: <title>
 
 Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>"
@@ -167,16 +208,18 @@ Move the published topic from the Queue section to the Published section in `_au
 
 Post confirmation:
 
-> **Published.** Live in ~1-3 min at `https://stoddgroup.com/<slug>/`. Topic moved to Published in the queue.
+> **Published.** Live in ~1-3 min at `https://stoddgroup.com/<slug>/`. Topic moved to Published in the queue. Reverse links added in [N] older articles; their `dateModified` stamps refreshed.
 
 **On revision request:**
 - Apply the specific change she asked for (and only that change — don't over-edit).
+- If she asks to swap a reverse-link target, remove the sentence from the old target article (restore its prior `dateModified`), add it to the new target, and update the new target's `dateModified` to today.
 - If she asks for a different hero color, re-run `generate-hero.py` with a different `--tag` value (e.g., `financing`, `market-updates`, `neighborhoods`).
 - Re-post the updated preview section(s). You don't need to repost the whole article; just the changed parts + a confirmation question.
 - Wait for approval or another revision round.
 
 **On "skip" or "swap this topic"** (she doesn't want to publish this one):
 - Mark the topic in the queue as `- [-]` (dropped, not deleted — so you don't pick it next week) OR, if she wants it pushed to the bottom of the queue, move it there.
+- **Roll back reverse-link edits** — `git restore` the 2-3 touched articles so they go back to their prior `dateModified` and content. Dropped articles should leave no trace in older posts.
 - Pick the next topic in the queue and start over from STEP 1.
 
 ### STEP 6 — No response
@@ -190,8 +233,11 @@ If Jocelyn doesn't reply within 24 hours:
 
 - Do not open a GitHub PR. This routine commits straight to main after Jocelyn approves in chat.
 - Do not auto-publish without approval, ever.
-- Do not touch files other than `<slug>/index.html`, `<slug>/hero.webp`, `sitemap.xml`, `_automation/topic-ideas.md`, and the listing pages (blog hub, tag pages, service page) the article is being added to.
+- Do not touch files other than `<slug>/index.html`, `<slug>/hero.webp`, `sitemap.xml`, `_automation/topic-ideas.md`, the listing pages (blog hub, tag pages, service page) the article is being added to, and the 2–3 existing articles you add contextual reverse-links to.
 - Do not research for more than ~30 min of session time before posting the draft. First draft in chat > polishing in silence.
 - Do not source or use photos for the hero. The hero is always the generated branded WebP — nothing else.
 - Do not add an on-page hero image above the article body. Stodd Group's design is title → pills → body, with no header image.
 - Do not anchor city or neighborhood examples to markets outside the 8-county service area listed above (no St. George, Cedar City, Moab, etc.).
+- Do not skip the FAQ section — it's required on every article to capture PAA / long-tail SERP slots.
+- Do not skip reverse-linking — a new article with zero cluster back-links is a dead-end that won't rank.
+- Do not rephrase the real PAA questions into blog-voice titles for the FAQ — Google matches the user's natural-language query against the on-page question wording. Keep them verbatim.
