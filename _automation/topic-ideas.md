@@ -192,62 +192,16 @@ Topics queued for weekly auto-articles. The weekly routine picks the TOP uncheck
 - **Angle**: Why Holladay ranks high for retirees (established neighborhoods, healthcare access, canyon proximity), what downsizing within Salt Lake County looks like, nearby 55+ options (Millcreek, South Jordan), selling the family home first vs. buying first, and how Utah taxes retirement income.
 - **Why it ranks**: Local downsizers are a real, high-equity audience and nobody writes for them by city.
 
----
-
-### 9. Utah Rental Market Trends 2026 — REFRESH
-- **Proposal type**: UPDATE: refresh `utahs-rental-market-opportunities-and-challenges-for-landlords`
-- **Primary keyword**: utah rental market trends 2026
-- **Angle**: The site's single acute freshness debt. Current article (357w, Aug 2023) says "Utah's housing market has undergone significant shifts in 2023" and cites 5× "2023" / 4× "2022" references as current. Rewrite with Q3/Q4 2026 data from Salt Lake Board MLS / UAR / HUD. Add Salt Lake County, Utah County, and Davis County rent-growth breakdown; vacancy and rent-to-own ratios; one landlord-side worked cash-flow example; and a FAQ section + FAQPage schema. Grow article from 357 → 1,500–1,800 words. Preserve title, URL, and inbound links.
-- **Why it ranks**: This article has been live since Aug 2023 with crawl history and backlinks; a proper 2026 refresh is higher-leverage than starting a new URL from zero authority. High-intent landlord query.
-- **Tags**: investing
-- **Audience**: investors
-- **Compliance exposure**: tax/legal
-- _Pre-research fields (LSI variants, PAA questions, cluster back-links, competitor gap) will be filled by the weekly writer in STEP 2._
-
----
-
-### 10. Utah Housing Market Trends 2026 — REFRESH
-- **Proposal type**: UPDATE: refresh `trends-in-the-utah-housing-market-navigating-current-real-estate-dynamics`
-- **Primary keyword**: utah housing market trends 2026
-- **Angle**: Article's title promises "current real estate dynamics" but content is Jan 2024. Rewrite inventory, rate, and price sections with 2026 data from Salt Lake Board MLS, UAR, Redfin, and St. Louis Fed. Add a FAQ section + FAQPage schema. Expand to 1,500+ words. Preserve URL.
-- **Why it ranks**: Established crawl history + backlinks on a high-volume keyword. Freshness refresh beats a new URL starting from zero.
-- **Tags**: market-updates
-- **Audience**: all
-- **Compliance exposure**: none
-- _Pre-research fields will be filled by the weekly writer in STEP 2._
-
----
-
-### 11. Silicon Slopes Housing Market 2026 — REFRESH
-- **Proposal type**: UPDATE: refresh `the-impact-of-tech-boom-on-utahs-housing-market-what-you-need-to-know`
-- **Primary keyword**: silicon slopes utah housing market 2026
-- **Angle**: Refresh Silicon Slopes employment and price-growth numbers for Lehi, Draper, and Provo with 2026 data. Pull from Zillow Research, Redfin, and the Utah Governor's Office of Economic Opportunity. Add a FAQ section + FAQPage schema. Preserve URL.
-- **Why it ranks**: Mar 2024 article on a rapidly-changing topic; a 2026 pass restores competitiveness for Silicon Slopes relocation and buyer queries.
-- **Tags**: market-updates, relocation
-- **Audience**: relocators
-- **Compliance exposure**: none
-- _Pre-research fields will be filled by the weekly writer in STEP 2._
-
----
-
-### 12. Best Utah Cities to Invest in Real Estate 2026 — REFRESH
-- **Proposal type**: UPDATE: refresh `top-areas-to-invest-in-utah-real-estate-an-in-depth-market-analysis`
-- **Primary keyword**: best places to invest in utah real estate 2026
-- **Angle**: Current article (Aug 2023, 492w) names 13 Wasatch Front cities but gives no 2026 price, rent, or price-to-rent ratios. Add per-city data for Salt Lake City, Provo, Orem, Lehi, Draper, Sandy, Herriman, Ogden, Logan, Park City, Heber, and Tooele: median sale, median rent, price-to-rent ratio. Rank cities by cash-flow attractiveness. Add FAQ section + FAQPage schema. Preserve URL.
-- **Why it ranks**: Commercial-intent keyword without the specific numbers it demands. A proper data refresh can move it from page 2 to top 5.
-- **Tags**: investing, neighborhoods
-- **Audience**: investors
-- **Compliance exposure**: none
-- _Pre-research fields will be filled by the weekly writer in STEP 2._
-
----
-
 ## Published (auto-maintained by weekly routine)
 
 _Entries move here after the weekly routine publishes them._
 
 - [x] 2026-11-23 - Radon Testing When Buying a Utah Home: Timing, Cost, and Negotiating Mitigation
 - [x] 2026-11-19 - Utah's 45% Primary Residential Exemption: The New Filing Rule Every Homebuyer Needs to Know (2027)
+- [x] 2026-11-25 - REFRESHED: `/the-impact-of-tech-boom-on-utahs-housing-market-what-you-need-to-know/` (Tier 2 — FAQ + dated-neutral framing)
+- [x] 2026-11-25 - REFRESHED: `/top-areas-to-invest-in-utah-real-estate-an-in-depth-market-analysis/` (Tier 3 Batch 1 — Wasatch-only, Clearfield replaces St. George)
+- [x] 2026-11-25 - REFRESHED: `/utahs-rental-market-opportunities-and-challenges-for-landlords/` (Tier 3 Batch 2 — 2026 Utah landlord outlook)
+- [x] 2026-11-25 - REFRESHED: `/trends-in-the-utah-housing-market-navigating-current-real-estate-dynamics/` (Tier 3 Batch 2 — evergreen cycle-reading framework)
 
 ---
 
