@@ -4,6 +4,26 @@
       "source": "/call",
       "destination": "https://go.stoddgroup.com/widget/bookings/intro-call-stodd-group",
       "permanent": false
+    },
+    {
+      "source": "/the-basics-of-real-estate-investing-for-beginners/:path*",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-basics-of-real-estate-investing-for-beginners",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-pros-and-cons-of-investing-in-real-estate/:path*",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-pros-and-cons-of-investing-in-real-estate",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
     }
   ]
 }
