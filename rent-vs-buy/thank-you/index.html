@@ -169,6 +169,24 @@ Book a free 15-min call with Troy
 })();
 </script>
 
-<script src="https://go.stoddgroup.com/js/external-tracking.js" data-tracking-id="tk_f6f02472d06546d9805509274add47ea"></script>
+<script defer src="https://go.stoddgroup.com/js/external-tracking.js" data-tracking-id="tk_f6f02472d06546d9805509274add47ea"></script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  if (typeof window.gtag !== 'function') return;
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (!a || !a.href) return;
+    var href = a.href;
+    var pagePath = location.pathname;
+    if (href.indexOf('go.stoddgroup.com/widget/bookings/') !== -1) {
+      window.gtag('event', 'book_call_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+    } else if (href.indexOf('utahinvestorhub.com') !== -1) {
+      window.gtag('event', 'visit_uih_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+    } else if (href.indexOf('tel:') === 0) {
+      window.gtag('event', 'phone_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+    }
+  }, { passive: true });
+})();
+</script>
 </body> </html>
