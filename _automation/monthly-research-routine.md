@@ -1,8 +1,8 @@
 # Monthly Keyword Research Routine — Claude Code Scheduled Task (Chat mode)
 
 **Set up in Claude Code → Scheduled tasks → New task:**
-- Schedule: first Monday of each month at 8:00 AM Mountain Time
-- Cron: `0 8 1-7 * 1` (LOCAL time)
+- Schedule: 1st of each month at 8:00 AM Mountain Time
+- Cron: `0 8 1 * *` (LOCAL time)
 - Output mode: **Chat**
 - Prompt: paste everything below the `---` line
 
