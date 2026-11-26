@@ -6,12 +6,22 @@
       "permanent": false
     },
     {
+      "source": "/call/",
+      "destination": "https://go.stoddgroup.com/widget/bookings/intro-call-stodd-group",
+      "permanent": false
+    },
+    {
       "source": "/the-basics-of-real-estate-investing-for-beginners/:path*",
       "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
       "permanent": true
     },
     {
       "source": "/the-basics-of-real-estate-investing-for-beginners",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-basics-of-real-estate-investing-for-beginners/",
       "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
       "permanent": true
     },
@@ -26,12 +36,22 @@
       "permanent": true
     },
     {
+      "source": "/the-pros-and-cons-of-investing-in-real-estate/",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
       "source": "/a-comprehensive-guide-to-house-hacking-in-utah-maximizing-your-cash-flow/:path*",
       "destination": "/best-utah-cities-house-hacking-2026/",
       "permanent": true
     },
     {
       "source": "/a-comprehensive-guide-to-house-hacking-in-utah-maximizing-your-cash-flow",
+      "destination": "/best-utah-cities-house-hacking-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/a-comprehensive-guide-to-house-hacking-in-utah-maximizing-your-cash-flow/",
       "destination": "/best-utah-cities-house-hacking-2026/",
       "permanent": true
     },
@@ -46,12 +66,22 @@
       "permanent": true
     },
     {
+      "source": "/maximize-your-real-estate-investment-house-hacking-strategies-in-salt-lake-utah/",
+      "destination": "/best-utah-cities-house-hacking-2026/",
+      "permanent": true
+    },
+    {
       "source": "/the-beginners-guide-to-house-hacking-in-utah/:path*",
       "destination": "/second-house-hack-utah/",
       "permanent": true
     },
     {
       "source": "/the-beginners-guide-to-house-hacking-in-utah",
+      "destination": "/second-house-hack-utah/",
+      "permanent": true
+    },
+    {
+      "source": "/the-beginners-guide-to-house-hacking-in-utah/",
       "destination": "/second-house-hack-utah/",
       "permanent": true
     },
@@ -66,12 +96,22 @@
       "permanent": true
     },
     {
+      "source": "/the-ultimate-guide-to-house-hacking-in-the-salt-lake-valley/",
+      "destination": "/best-utah-cities-house-hacking-2026/",
+      "permanent": true
+    },
+    {
       "source": "/10-steps-for-first-time-home-buyers-in-salt-lake/:path*",
       "destination": "/top-10-tips-for-first-time-home-buyers-in-utah/",
       "permanent": true
     },
     {
       "source": "/10-steps-for-first-time-home-buyers-in-salt-lake",
+      "destination": "/top-10-tips-for-first-time-home-buyers-in-utah/",
+      "permanent": true
+    },
+    {
+      "source": "/10-steps-for-first-time-home-buyers-in-salt-lake/",
       "destination": "/top-10-tips-for-first-time-home-buyers-in-utah/",
       "permanent": true
     },
@@ -86,12 +126,22 @@
       "permanent": true
     },
     {
+      "source": "/how-to-afford-your-dream-home-in-salt-lake-utah/",
+      "destination": "/first-time-home-buyers-how-to-afford-a-house-in-salt-lake-valley/",
+      "permanent": true
+    },
+    {
       "source": "/why-salt-lake-valley-is-the-perfect-place-for-first-time-home-buyers/:path*",
       "destination": "/navigating-the-salt-lake-real-estate-market-a-comprehensive-guide-for-first-time-buyers/",
       "permanent": true
     },
     {
       "source": "/why-salt-lake-valley-is-the-perfect-place-for-first-time-home-buyers",
+      "destination": "/navigating-the-salt-lake-real-estate-market-a-comprehensive-guide-for-first-time-buyers/",
+      "permanent": true
+    },
+    {
+      "source": "/why-salt-lake-valley-is-the-perfect-place-for-first-time-home-buyers/",
       "destination": "/navigating-the-salt-lake-real-estate-market-a-comprehensive-guide-for-first-time-buyers/",
       "permanent": true
     },
@@ -106,12 +156,22 @@
       "permanent": true
     },
     {
+      "source": "/how-to-choose-the-right-real-estate-investment-property/",
+      "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
+      "permanent": true
+    },
+    {
       "source": "/tips-for-choosing-the-best-real-estate-investing-strategy/:path*",
       "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
       "permanent": true
     },
     {
       "source": "/tips-for-choosing-the-best-real-estate-investing-strategy",
+      "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
+      "permanent": true
+    },
+    {
+      "source": "/tips-for-choosing-the-best-real-estate-investing-strategy/",
       "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
       "permanent": true
     },
@@ -126,12 +186,22 @@
       "permanent": true
     },
     {
+      "source": "/how-to-find-the-best-deals-on-real-estate-investments/",
+      "destination": "/how-to-navigate-salt-lake-citys-mls-listings-for-the-best-real-estate-deals/",
+      "permanent": true
+    },
+    {
       "source": "/how-to-get-the-most-out-of-your-real-estate-investment/:path*",
       "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
       "permanent": true
     },
     {
       "source": "/how-to-get-the-most-out-of-your-real-estate-investment",
+      "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-get-the-most-out-of-your-real-estate-investment/",
       "destination": "/the-comprehensive-guide-to-real-estate-investment-strategies-for-utah-millennials/",
       "permanent": true
     },
@@ -146,12 +216,22 @@
       "permanent": true
     },
     {
+      "source": "/how-to-buy-investment-property-in-utah-a-step-by-step-guide-for-beginners/",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
       "source": "/why-salt-lake-valley-is-the-ideal-place-for-your-real-estate-investment/:path*",
       "destination": "/top-areas-to-invest-in-utah-real-estate-an-in-depth-market-analysis/",
       "permanent": true
     },
     {
       "source": "/why-salt-lake-valley-is-the-ideal-place-for-your-real-estate-investment",
+      "destination": "/top-areas-to-invest-in-utah-real-estate-an-in-depth-market-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/why-salt-lake-valley-is-the-ideal-place-for-your-real-estate-investment/",
       "destination": "/top-areas-to-invest-in-utah-real-estate-an-in-depth-market-analysis/",
       "permanent": true
     },
@@ -166,12 +246,22 @@
       "permanent": true
     },
     {
+      "source": "/what-you-need-to-know-about-buying-multi-family-homes-in-salt-lake/",
+      "destination": "/multifamily-vs-single-family-investing-in-utah-which-is-right-for-you/",
+      "permanent": true
+    },
+    {
       "source": "/understanding-utahs-proptech-scene-and-its-impact-on-real-estate/:path*",
       "destination": "/the-impact-of-tech-boom-on-utahs-housing-market-what-you-need-to-know/",
       "permanent": true
     },
     {
       "source": "/understanding-utahs-proptech-scene-and-its-impact-on-real-estate",
+      "destination": "/the-impact-of-tech-boom-on-utahs-housing-market-what-you-need-to-know/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-utahs-proptech-scene-and-its-impact-on-real-estate/",
       "destination": "/the-impact-of-tech-boom-on-utahs-housing-market-what-you-need-to-know/",
       "permanent": true
     }
