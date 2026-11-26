@@ -16,6 +16,14 @@ Stodd Group serves a broad Utah real estate audience — buyers, sellers, first-
 
 **Your output feeds the weekly article writer.** The weekly routine has five SEO disciplines it executes on each article (keyword placement, FAQ section + FAQPage schema, reverse topic-cluster linking, `dateModified` freshness, and competitor-gap undercutting). Your proposals must pre-research the raw material for all five so the weekly writer can execute without re-doing the research.
 
+**Compliance baseline — every proposed topic must be winnable under these rules:**
+
+- **Describe places, not people.** Topic titles, angles, primary keywords, and PAA questions must target market features (walkability, commute, employers, cash-flow markets, STR rules, housing stock) — not demographic groups. **Banned in the title, primary keyword, angle, PAA questions, or anywhere in the proposal:** young families, young professionals, millennials, retirees, seniors, students or missionaries as a tenant category, singles, family-friendly, safe neighborhood, good schools, excellent schools, best schools, diverse, community values, exclusive. If a candidate topic can only be framed around a banned descriptor, either re-angle it around the underlying market feature ("most walkable Utah neighborhoods" instead of "neighborhoods for young professionals") or drop it.
+- **No superlatives about Jocelyn or the team.** Don't propose topics whose angle is "why Jocelyn is the best" or "top Utah agent." If Jocelyn's unit count appears in an angle, it is "50+" — no higher without explicit Jocelyn approval.
+- **Agent compensation topics require careful framing.** If a proposal touches commission, who-pays-the-agent, or buyer agreements, the Angle field must confirm that the article will frame compensation as negotiable, not set by law, and set in a written buyer agreement before touring. Never propose an angle that leads with "the seller pays the buyer's agent."
+- **Tax / legal topics require qualifiers.** Any tax or legal proposal (1031, cost seg, REPS, STR tax, LLC setup, Section 121) must flag `tax/legal` in Compliance exposure, and the Angle should mention the qualifier + "talk to your CPA/attorney" expectation.
+- **Brokerage + EHO.** Every published article already ends with the template's standard brokerage disclaimer; the site-wide footer carries Equal Housing Opportunity with the HUD mark. No proposal needs to spell this out — it's automatic.
+
 ### STEP 1 — Research (silent)
 
 ```bash
@@ -38,7 +46,7 @@ Web search for current Utah real estate topics, trends, and competitor coverage 
 - Specific sub-markets: Lehi, Draper, Sandy, Herriman, Park City, Heber, Logan, Ogden, Provo, Orem, Layton, Bountiful, Tooele (stay in service area)
 - Specific programs: UHC, FHA, VA, cost seg, 1031, DSCR, conventional loan
 - Buyer/seller pain points: inspection concessions, appraisal gaps, market slowdowns, interest-rate buy-downs
-- Lifestyle/relocation: moving to Utah from CA/TX/other, best areas for young families, best areas for retirees
+- Lifestyle/relocation: moving to Utah from CA/TX/other, most walkable neighborhoods, best commute to Silicon Slopes, master-planned communities with amenities (frame around place features, never demographic groups)
 
 For each candidate topic, also run a "People Also Ask" / related-search pass so you have 3-5 verbatim PAA questions ready to attach. Capture the exact user-query wording — don't rephrase.
 
@@ -129,7 +137,7 @@ Append each approved topic to `_automation/topic-ideas.md` at the END of the Que
 **Compliance flags quick-reference** (used by the weekly writer to tune disclaimers and sourcing):
 - `tax/legal` — anything involving Utah statutes, tax rules, or legal process (1031, exemption filings, security deposit law, LLC setup).
 - `city rules` — city- or county-specific zoning, STR licensing, ADU permits, HOA rules.
-- `Fair Housing` — content that describes buyers, tenants, or neighborhoods in ways that could touch protected classes.
+- `Fair Housing` — content that describes buyers, tenants, or neighborhoods in ways that could touch protected classes. The ALWAYS banned-descriptor rule (place, not people) covers this for every article; use this flag when the topic sits unusually close to the line (tenant screening, neighborhood characterization, rental-pool descriptions) so the weekly writer tightens scrutiny.
 - `REALTOR code` — anything that could be read as steering, puffery, or undisclosed agency.
 - `health` — radon, lead paint, mold, asbestos, air/water quality, carbon monoxide, wildfire smoke, meth-exposure testing, well-water contamination, and other home health-safety topics.
 
@@ -169,3 +177,6 @@ Post in chat:
 - Do not leave `Competitor coverage gap` as a vague "no strong competing coverage" — if the slot is truly unclaimed, cite SERP evidence (e.g., "no top-10 result addresses <X> directly as of <date>"). A vague gap is a signal the topic isn't researched enough yet.
 - Do not propose a NEW article when overlap with an existing article is 40%+; propose it as an `UPDATE: refresh <slug>` instead, or drop it entirely if overlap is >80%.
 - Do not rephrase PAA questions into blog-voice titles — capture them exactly as real users type them. Google matches user queries against the on-page question wording.
+- Do not propose a topic whose title, primary keyword, angle, or PAA questions use a banned descriptor (young families, young professionals, millennials, retirees, seniors, singles, family-friendly, safe neighborhood, good/excellent/best schools, diverse, community values, exclusive). Re-angle around the underlying market feature or drop the topic.
+- Do not propose a topic whose angle leans on superlatives about Jocelyn or the team ("best Utah agent," "#1 investor-friendly realtor"), or one that cites a Jocelyn unit count higher than "50+".
+- Do not propose a commission or agent-pay topic whose angle leads with "the seller pays the buyer's agent." The required framing is compensation negotiable, not set by law, set in a written buyer agreement before touring.

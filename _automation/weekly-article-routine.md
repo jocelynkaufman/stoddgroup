@@ -60,14 +60,27 @@ Write the article body:
 - Include **4–6 semantic variants / LSI terms** throughout — related concepts a knowledgeable REALTOR would use alongside the primary keyword (e.g., for "Utah first-time home buyer": "down payment assistance," "FHA loan," "UHC program," "pre-approval," "closing costs," "earnest money").
 - Never keyword-stuff. If a phrase feels forced, rework the sentence instead.
 
-**Hard compliance rules (adjust tone per the Compliance exposure flag in the topic):**
+**Hard compliance rules — every article, every tag:**
 
-- **Always:** No cited Utah statutes, HB/SB numbers, or legal code sections. No invented stats or prices (use ranges with cited sources, or skip the number). No "guaranteed/best/secret" language. No promises of returns or appreciation.
-- **If topic flagged `tax/legal`:** Prominently include "consult a Utah-licensed CPA" (for tax) or "consult a Utah-licensed attorney" (for legal). Do not give specific advice.
-- **If topic flagged `city rules`:** Say "confirm current rules with the city's planning department before offering on anything." Link to utah.gov or the specific city's website.
-- **If topic flagged `Fair Housing`:** Never reference protected classes when describing tenants, buyers, or neighborhoods. "Young professionals near the U" is fine; "singles", "families", or "ethnic community" as a buyer or tenant target is not.
-- **If topic flagged `REALTOR code`:** Avoid any phrasing that could be read as steering, puffery, or an undisclosed agency relationship. Jocelyn's REALTOR status and Stodd Group affiliation are implicit in the chrome — no need to spell them out in body.
-- **If topic flagged `health`:** Used for anything health-safety related in a home — radon, lead paint, mold, asbestos, air/water quality, carbon monoxide, wildfire smoke, meth-exposure testing, well-water contamination, etc. Cite EPA, CDC, Utah Department of Health and Human Services, or the Utah DEQ as sources. Recommend a certified home inspector, licensed abatement/remediation contractor, or accredited testing lab — never offer a personal health-risk assessment or specific remediation prescription. Don't quantify health risk ("X% risk of cancer") unless it's a direct quote from a cited authority. Advise readers to test, confirm with a certified professional, and treat findings as a negotiation lever during the inspection period, not DIY medical interpretation.
+**ALWAYS rules (no exceptions; applied to body, all headings, FAQ, meta, and JSON-LD schema):**
+
+- **Describe places, not people.** Write about properties, prices, rents, commute, amenities, employers, housing stock, and demand drivers. Never describe or target people. **Banned descriptors anywhere in the article (body, H1/H2/H3, FAQ, meta, OG, Twitter, BlogPosting + FAQPage schema):** young families, young professionals, millennials, retirees, seniors, students or missionaries as a tenant category, singles, family-friendly, safe neighborhood, good schools, excellent schools, best schools, diverse, community values, exclusive. Rewrite into a place or demand-driver fact — e.g., "walkable to Trax," "near major employers," "newer housing stock," "parks and trails," "rental demand from 2–4 year military rotations," "inside the Silicon Slopes tech corridor."
+- **No superlatives about Jocelyn or the team.** Never write "best," "#1," "top agent," "award-winning," "leading Utah agent," or similar. No unverifiable stats about Jocelyn or Stodd Group. **If Jocelyn's personal unit count is mentioned anywhere, it is "50+"** — no larger number without explicit Jocelyn approval in chat.
+- **Agent compensation — never claim buyers don't pay or that the seller always pays.** When the article touches commission or who-pays-the-agent, the required framing is: *"Agent compensation is negotiable, not set by law, and is set in a written buyer agreement signed before touring. In many cases sellers agree to cover some or all of it; options are discussed upfront."* Never state "the seller pays the buyer's agent" as a flat fact.
+- **Tax or legal claims require a qualifier + a 'talk to your CPA/attorney' line.** Any claim about tax benefits, deductions, loss offsets, cost segregation, 1031, STR tax status, depreciation, or REPS must include the specific qualifier (e.g., "W-2 offset is only available with real estate professional status or material participation in a short-term rental") plus "talk to your CPA" (and for legal topics, "talk to a Utah-licensed attorney"). Never state a tax outcome as universal.
+- **Brokerage + Equal Housing Opportunity.** The article template's standard disclaimer at the end of body content stays intact — it names Jocelyn as a licensed Utah REALTOR with Stodd Group Real Estate, brokered under Canovo Group. The site-wide footer already carries "Equal Housing Opportunity" with the HUD mark; **do not re-add EHO inside the article body** (that caused duplicates in the past).
+
+**General (always):** No cited Utah statutes, HB/SB numbers, or legal code sections. No invented stats or prices (use ranges with cited sources, or skip the number). No "guaranteed/best/secret" language. No promises of returns or appreciation.
+
+**If topic flagged `tax/legal`:** In addition to the ALWAYS tax-qualifier rule above, lead the relevant section with "consult a Utah-licensed CPA" (for tax) or "consult a Utah-licensed attorney" (for legal). Do not give specific advice.
+
+**If topic flagged `city rules`:** Say "confirm current rules with the city's planning department before offering on anything." Link to utah.gov or the specific city's website.
+
+**If topic flagged `Fair Housing`:** The ALWAYS banned-descriptor list applies in full. On top of that, any passage describing tenants, buyers, neighborhoods, or demand must describe the market feature (employer, commute, housing stock, amenity) rather than who lives or rents there. If you need a target reader for the article voice, use role descriptors like "first-time buyers," "move-up buyers," "investors," or "relocators" — not demographic descriptors.
+
+**If topic flagged `REALTOR code`:** Avoid any phrasing that could be read as steering, puffery, or an undisclosed agency relationship. Jocelyn's REALTOR status and Stodd Group affiliation are implicit in the chrome — no need to spell them out in body.
+
+**If topic flagged `health`:** Used for anything health-safety related in a home — radon, lead paint, mold, asbestos, air/water quality, carbon monoxide, wildfire smoke, meth-exposure testing, well-water contamination, etc. Cite EPA, CDC, Utah Department of Health and Human Services, or the Utah DEQ as sources. Recommend a certified home inspector, licensed abatement/remediation contractor, or accredited testing lab — never offer a personal health-risk assessment or specific remediation prescription. Don't quantify health risk ("X% risk of cancer") unless it's a direct quote from a cited authority. Advise readers to test, confirm with a certified professional, and treat findings as a negotiation lever during the inspection period, not DIY medical interpretation.
 
 **Required inclusions:**
 - 2-4 inline links to existing Stodd Group articles or service pages (descriptive anchor text, never "click here"). Service pages to link to where relevant: `/buying-a-house/`, `/buying-a-house/first-time-buyers/`, `/buying-a-house/out-of-state/`, `/selling/`, `/real-estate-investing/`, `/real-estate-investing/house-hacking/`, `/real-estate-investing/brrrr/`, `/real-estate-investing/short-term-rentals/`, `/real-estate-investing/1031-exchange/`, `/real-estate-investing/cost-segregation/`, `/rent-vs-buy/`, `/markets-we-serve/`.
@@ -115,7 +128,15 @@ python3 _automation/generate-hero.py \
 
 This writes `<slug>/hero.webp`. **Not rendered on-page** — it's used only as the `og:image` / `twitter:image` meta (social preview card). Article pages read cleanly from title → tags → body, with no hero image above the body. The template already references `<slug>/hero.webp` in the OG meta via the SLUG token.
 
-Run a claim-audit scan: count every `\d+%`, `\$[\d,]+`, mention of Utah law or statute, mention of a specific city's licensing or zoning. Collect for the chat preview. Also flag ANY city mentioned outside the 8-county service area (see top of this prompt) — those should be removed or re-anchored to an in-area example.
+Run a claim-audit + compliance scan. Count every `\d+%`, `\$[\d,]+`, mention of Utah law or statute, mention of a specific city's licensing or zoning. Also scan for:
+
+- Any **banned descriptor** (young families, young professionals, millennials, retirees, seniors, singles, family-friendly, safe neighborhood, good/excellent/best schools, diverse, community values, exclusive) anywhere in body, headings, FAQ, meta, OG, Twitter, or JSON-LD schema. Must be zero.
+- Any **superlative about Jocelyn or the team** ("best," "#1," "top agent," "award-winning," "leading") or any Jocelyn-related unit count other than "50+". Must be zero.
+- Any **unqualified commission or agent-pay statement** ("the seller pays," "buyers don't pay their agent," etc.). The only accepted framing is: negotiable, not set by law, set in a written buyer agreement before touring.
+- Any **tax or legal claim stated as universal**. Every tax claim must include the qualifier (REPS, material participation, etc.) and a "talk to your CPA/attorney" line. Legal claims need "talk to a Utah-licensed attorney."
+- Any city mentioned outside the 8-county service area (see top of this prompt) — remove or re-anchor to an in-area example.
+
+Collect every finding for the chat preview under "Compliance scan". If all buckets are zero/clean, the preview reports "clean".
 
 Update `sitemap.xml` with the new article URL (lastmod today, changefreq yearly, priority 0.6).
 
@@ -187,6 +208,8 @@ Then post links, reverse-links, competitor gap, FAQ list, and claim audit:
 > **FAQ questions:** [the 3–5 PAA questions included in the FAQ section]
 >
 > **Claim audit:** [every numeric claim, statute reference, or city-rule mention worth your eyes — if none, say "no sensitive claims"]
+>
+> **Compliance scan:** banned descriptors: [list each hit, or "none"]. Superlatives about Jocelyn/team: [list, or "none"]. Agent-pay framing: ["compliant" / "N/A"]. Tax/legal qualifiers: ["compliant" / "N/A"]. Unit count: ["50+" / "not mentioned"]. Out-of-service-area cities: [list, or "none"]. **Must be all-clean before approval — a single banned descriptor fails the article.**
 
 Close with:
 
@@ -315,3 +338,8 @@ Post confirmation:
 - On an UPDATE proposal, do NOT change the URL slug without explicit Jocelyn approval in chat — slug changes break inbound links and lose GSC history.
 - On an UPDATE, do NOT regenerate the hero image unless the primary tag has materially changed.
 - On an UPDATE, do NOT add new reverse-links in other articles. The URL already exists and already has inbound links; adding more creates clutter without SEO value.
+- Do NOT use any banned descriptor (young families, young professionals, millennials, retirees, seniors, singles, family-friendly, safe neighborhood, good/excellent/best schools, diverse, community values, exclusive) anywhere in body, headings, FAQ, meta, or schema. Rewrite into a place or demand-driver fact.
+- Do NOT use superlatives about Jocelyn or the team ("best," "#1," "top agent," "award-winning," "leading"). If Jocelyn's personal unit count is mentioned, it is "50+" — no higher.
+- Do NOT claim buyers don't pay their agent or that the seller always pays. Compensation is negotiable, not set by law, and set in a written buyer agreement signed before touring.
+- Do NOT state a tax outcome as universal. Every tax claim needs the specific qualifier (REPS, material participation, STR) and a "talk to your CPA" line; legal claims need "talk to a Utah-licensed attorney."
+- Do NOT re-add "Equal Housing Opportunity" inside the article body. It already lives in the site-wide footer with the HUD mark; a body-level EHO would double up.
