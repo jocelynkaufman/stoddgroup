@@ -21,7 +21,9 @@ cd "/Users/jocelynkaufman/Claude/Stodd Group Website"
 git pull origin main
 ```
 
-Read `_automation/topic-ideas.md` and pick the FIRST unchecked topic (`- [ ]`) in the Queue section. Capture every field: title, primary keyword, tags, compliance exposure, angle, why-it-ranks, **and the Competitor coverage gap URLs**.
+Read `_automation/topic-ideas.md` and pick the FIRST unchecked topic (`- [ ]`) in the Queue section. Capture every field: title, primary keyword, tags, compliance exposure, angle, why-it-ranks, **and the Competitor coverage gap URLs**. Monthly-researched topics (Nov 2026 onward) also include `Proposal type`, `Secondary keywords / LSI variants`, `Search intent`, `PAA questions`, and `Cluster back-link candidates` — use them when present; if the topic is older and lacks these fields, do that research yourself in STEP 2.
+
+**Check `Proposal type` FIRST.** If it's `UPDATE: refresh <existing-slug>`, you're rewriting an existing article in place — **skip the standard STEP 2 – STEP 5 flow below and jump to the "UPDATE workflow" section** near the bottom of this prompt. If it's `NEW` or absent, continue with the standard flow.
 
 Read `_templates/article.html` for the HTML template with all `{{PLACEHOLDER}}` tokens.
 
@@ -229,6 +231,70 @@ If Jocelyn doesn't reply within 24 hours:
 - Do NOT auto-publish. Even one typo past Jocelyn's eye becomes a permanent indexed page on her brokerage's professional site. Wait.
 - If she doesn't reply within 7 days, the article sits as a draft. She can resume the chat and approve whenever.
 
+### UPDATE workflow — when `Proposal type` is `UPDATE: refresh <existing-slug>`
+
+The whole weekly flow forks. You're not creating a new article — you're rewriting an existing one in place: **same URL, same hero, same listing cards; new copy, refreshed schema `dateModified`, FAQ added if missing, all 5 SEO disciplines applied.** This preserves inbound links and Google Search Console history, which a fresh slug would lose.
+
+**U-1. Read the existing article.** Open `<existing-slug>/index.html`. Note the current word count, section outline, schema version (does it already have FAQPage? a `dateModified` field?), and the original `datePublished`. This is your baseline for the refresh.
+
+**U-2. Research & rewrite.** Run the same research pass as a NEW article (open the competitor-gap URLs + the Utah-context web search + PAA scan). Then rewrite the article body with:
+- Updated 2026 stats — replace every 2023–2024 figure you find
+- All 5 SEO disciplines fully applied — keyword placement rules, 3–5 PAA questions in the required FAQ section, competitor-gap undercutting, LSI variants
+- **Same title, slug, and H1** unless the primary keyword has materially changed. If it has, STOP and ask Jocelyn in chat before changing anything — slug changes break inbound links and lose GSC history, and a title change should be a deliberate editorial call.
+
+**U-3. Build the refresh.**
+
+1. **Edit `<existing-slug>/index.html` in place.** Replace the body content (everything between the article body wrapper and the static Jocelyn Stoddard bio card) with the new copy. Do not touch the header, footer, bio card, disclaimer, or CTA band — they're centrally managed.
+2. **Update the BlogPosting schema `dateModified`** to today's ISO date (`YYYY-MM-DD`). Leave `datePublished` as the original date — Google uses the gap between the two to recognize a genuine refresh. If the existing schema doesn't have a `dateModified` property at all, add one.
+3. **FAQPage schema.** If the existing article doesn't have a FAQPage JSON-LD block, ADD one as a third `<script type="application/ld+json">` alongside BlogPosting + BreadcrumbList. If it already has one, overwrite its `mainEntity` array with the new Q&A pairs. The on-page question/answer text and the schema `name`/`text` must match verbatim.
+4. **Keep the existing hero** (`<slug>/hero.webp`) unless the primary tag has materially changed. If it has, regenerate with the new `--tag`.
+5. **Listing-card dates.** Update the visible date on the article's card wherever it's listed — `blog/index.html`, every `blog/tag/<tag-slug>/index.html` it appears on, and any service page where it's featured. This surfaces the refresh in the listing views.
+6. **Sitemap.** Update the article's `<lastmod>` to today's date. Do NOT add a new `<url>` entry — the URL already exists.
+7. **No new reverse-links.** This article already lives in the cluster and already has inbound links. Don't add contextual back-links from other articles for an UPDATE.
+
+Run the same claim-audit scan as a NEW article (count every `\d+%`, `\$[\d,]+`, statute reference, city-rule mention, health claim, and any out-of-service-area city).
+
+**U-4. Preview in chat.**
+
+Open with:
+
+> **This week's UPDATE is ready for review**
+>
+> **Refreshing:** `/<existing-slug>/`
+> **Original `datePublished`:** [original date, from the existing schema]
+> **Original word count:** [N_old]
+> **New word count:** [N_new]
+> **Primary keyword:** [primary keyword — flag `(unchanged)` or `(CHANGED — see note)` vs original]
+>
+> **What changed:** [one short paragraph: refreshed 2026 stats in sections X and Y, added FAQ section (new), rewrote intro to undercut competitor gap on Z, etc.]
+
+Then post the new section outline, opening preview, internal links, competitor gap, FAQ questions, and claim audit — same format as the STEP 4 preview for NEW articles.
+
+Close with:
+
+> Approve to publish the refresh, or tell me what to change. (Slug and URL stay the same; `dateModified` becomes today.)
+
+**U-5. On approval — commit the refresh.**
+
+```bash
+git add <existing-slug>/index.html sitemap.xml _automation/topic-ideas.md \
+    blog/index.html blog/tag/*/index.html \
+    # plus any service page whose listing card date you refreshed
+git status --short  # verify ONLY the files you touched are staged
+git commit -m "Refresh article: <title>
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>"
+git push origin main
+```
+
+Move the UPDATE topic from the Queue to the Published section in `_automation/topic-ideas.md` with a refresh note: `- [x] <date> - REFRESHED: <title>`.
+
+Post confirmation:
+
+> **Refreshed.** Live in ~1–3 min at `https://stoddgroup.com/<existing-slug>/`. `dateModified` set to today; `datePublished` preserved; the URL is unchanged so inbound links and GSC history are intact.
+
+**On revision request for an UPDATE:** apply only the specific change she asked for. For an "undo this refresh" request, `git restore <existing-slug>/index.html sitemap.xml` and any listing cards, then report "Refresh rolled back — article is back to the pre-refresh version."
+
 ### What NOT to do
 
 - Do not open a GitHub PR. This routine commits straight to main after Jocelyn approves in chat.
@@ -241,3 +307,6 @@ If Jocelyn doesn't reply within 24 hours:
 - Do not skip the FAQ section — it's required on every article to capture PAA / long-tail SERP slots.
 - Do not skip reverse-linking — a new article with zero cluster back-links is a dead-end that won't rank.
 - Do not rephrase the real PAA questions into blog-voice titles for the FAQ — Google matches the user's natural-language query against the on-page question wording. Keep them verbatim.
+- On an UPDATE proposal, do NOT change the URL slug without explicit Jocelyn approval in chat — slug changes break inbound links and lose GSC history.
+- On an UPDATE, do NOT regenerate the hero image unless the primary tag has materially changed.
+- On an UPDATE, do NOT add new reverse-links in other articles. The URL already exists and already has inbound links; adding more creates clutter without SEO value.
