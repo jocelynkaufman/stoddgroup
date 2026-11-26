@@ -51,7 +51,12 @@ Write the article body:
 - **Audience match**: if the topic is for first-time buyers, write for them; if it's for investors, write for them. Don't force every post into one lane.
 
 **Keyword placement (critical — do not skip):**
-- The topic's **primary keyword** MUST appear in: the `<title>` tag, the H1 (template renders from title — if the primary keyword isn't already in the title, adjust the title so it is), the URL slug, the **meta description** (≤160 chars, keyword in the first half, with an action verb), the **first 100 words** of the body, and **at least one H2**. It should also appear naturally 2–3 more times in the body copy.
+- The topic's **primary keyword** MUST appear in: the `<title>` tag, the H1 (template renders from title — if the primary keyword isn't already in the title, adjust the title so it is), the URL slug, the **meta description** (see rules below), the **first 100 words** of the body, and **at least one H2**. It should also appear naturally 2–3 more times in the body copy.
+- **Meta description discipline (hard rules — a passive noun-phrase meta FAILS the audit):**
+  - ≤160 characters (Google truncates past this — a 161-char meta is a hard fail).
+  - Primary keyword in the first half.
+  - **MUST open with an action verb** like `Discover`, `Compare`, `Learn`, `Navigate`, `Calculate`, `Master`, `Explore`, `Lock in`, `Stack`, `Plan`, `Understand`, `Read`, `Avoid`, `Find`. Never open with a bare noun phrase ("Utah house flipping guide for 2026 —") even if the keyword is first — that's a click-dead construction.
+  - Same text appears in FOUR places and all four must stay in sync: `<meta name="description">`, `<meta property="og:description">`, `<meta name="twitter:description">`, and the BlogPosting JSON-LD `description` field.
 - Include **4–6 semantic variants / LSI terms** throughout — related concepts a knowledgeable REALTOR would use alongside the primary keyword (e.g., for "Utah first-time home buyer": "down payment assistance," "FHA loan," "UHC program," "pre-approval," "closing costs," "earnest money").
 - Never keyword-stuff. If a phrase feels forced, rework the sentence instead.
 
