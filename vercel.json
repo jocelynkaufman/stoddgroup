@@ -264,6 +264,126 @@
       "source": "/understanding-utahs-proptech-scene-and-its-impact-on-real-estate/",
       "destination": "/the-impact-of-tech-boom-on-utahs-housing-market-what-you-need-to-know/",
       "permanent": true
+    },
+    {
+      "source": "/six-benefits-of-investing-in-real-estate",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/six-benefits-of-investing-in-real-estate/",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/six-benefits-of-investing-in-real-estate/:path*",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/a-guide-to-investing-in-commercial-real-estate",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/a-guide-to-investing-in-commercial-real-estate/",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/a-guide-to-investing-in-commercial-real-estate/:path*",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-navigate-salt-lake-citys-mls-listings-for-the-best-real-estate-deals",
+      "destination": "/navigating-the-salt-lake-real-estate-market-a-comprehensive-guide-for-first-time-buyers/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-navigate-salt-lake-citys-mls-listings-for-the-best-real-estate-deals/",
+      "destination": "/navigating-the-salt-lake-real-estate-market-a-comprehensive-guide-for-first-time-buyers/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-navigate-salt-lake-citys-mls-listings-for-the-best-real-estate-deals/:path*",
+      "destination": "/navigating-the-salt-lake-real-estate-market-a-comprehensive-guide-for-first-time-buyers/",
+      "permanent": true
+    },
+    {
+      "source": "/navigating-utahs-real-estate-market-essential-tips-for-young-buyers",
+      "destination": "/top-10-tips-for-first-time-home-buyers-in-utah/",
+      "permanent": true
+    },
+    {
+      "source": "/navigating-utahs-real-estate-market-essential-tips-for-young-buyers/",
+      "destination": "/top-10-tips-for-first-time-home-buyers-in-utah/",
+      "permanent": true
+    },
+    {
+      "source": "/navigating-utahs-real-estate-market-essential-tips-for-young-buyers/:path*",
+      "destination": "/top-10-tips-for-first-time-home-buyers-in-utah/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-analyze-real-estate-deals",
+      "destination": "/rental-property-investing-in-utah-how-to-analyze-cash-flow-and-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-analyze-real-estate-deals/",
+      "destination": "/rental-property-investing-in-utah-how-to-analyze-cash-flow-and-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-analyze-real-estate-deals/:path*",
+      "destination": "/rental-property-investing-in-utah-how-to-analyze-cash-flow-and-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/what-you-need-to-know-about-real-estate-market-cycles",
+      "destination": "/trends-in-the-utah-housing-market-navigating-current-real-estate-dynamics/",
+      "permanent": true
+    },
+    {
+      "source": "/what-you-need-to-know-about-real-estate-market-cycles/",
+      "destination": "/trends-in-the-utah-housing-market-navigating-current-real-estate-dynamics/",
+      "permanent": true
+    },
+    {
+      "source": "/what-you-need-to-know-about-real-estate-market-cycles/:path*",
+      "destination": "/trends-in-the-utah-housing-market-navigating-current-real-estate-dynamics/",
+      "permanent": true
+    },
+    {
+      "source": "/a-guide-to-financing-your-real-estate-investment",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/a-guide-to-financing-your-real-estate-investment/",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/a-guide-to-financing-your-real-estate-investment/:path*",
+      "destination": "/how-to-invest-in-utah-real-estate-a-beginners-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/the-perks-of-living-in-salt-lake-city-for-young-professionals",
+      "destination": "/the-best-neighborhoods-in-utah-for-young-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/the-perks-of-living-in-salt-lake-city-for-young-professionals/",
+      "destination": "/the-best-neighborhoods-in-utah-for-young-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/the-perks-of-living-in-salt-lake-city-for-young-professionals/:path*",
+      "destination": "/the-best-neighborhoods-in-utah-for-young-professionals/",
+      "permanent": true
     }
   ]
 }
