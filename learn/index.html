@@ -290,17 +290,36 @@ Let's Connect
 document.querySelectorAll('a[data-smooth-scroll]').forEach(link=>{link.addEventListener('click',e=>{const id=link.getAttribute('href');if(!id||!id.startsWith('#'))return;const target=document.querySelector(id);if(!target)return;e.preventDefault();const header=document.querySelector('header');const offset=(header?header.getBoundingClientRect().height:0)+16;const startY=window.pageYOffset;const endY=target.getBoundingClientRect().top+startY-offset;const duration=900;const startT=performance.now();const ease=t=>t<0.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;function step(now){const elapsed=now-startT;const p=Math.min(elapsed/duration,1);window.scrollTo(0,startY+(endY-startY)*ease(p));if(p<1)requestAnimationFrame(step);else history.replaceState(null,'',id);}requestAnimationFrame(step);});});</script> <script defer src="https://go.stoddgroup.com/js/external-tracking.js" data-tracking-id="tk_f6f02472d06546d9805509274add47ea"></script> <script defer src="/_vercel/insights/script.js"></script> <script>
 (function(){
   if (typeof window.gtag !== 'function') return;
+  function getLinkLocation(a) {
+    var el = a;
+    while (el && el !== document.body) {
+      if (el.dataset && el.dataset.linkLocation) return el.dataset.linkLocation;
+      if (el.tagName === 'HEADER') return 'header_nav';
+      if (el.tagName === 'FOOTER') return 'footer';
+      if (el.id) {
+        var id = el.id.toLowerCase();
+        if (id === 'hero' || id.indexOf('hero') === 0) return 'hero';
+        if (id.indexOf('process') !== -1) return 'process_steps';
+        if (id.indexOf('faq') !== -1) return 'faq_cta';
+        if (id.indexOf('closing') !== -1 || id.indexOf('cta-band') !== -1) return 'closing_cta';
+      }
+      el = el.parentElement;
+    }
+    if (a.closest('article')) return 'article_body';
+    return 'unknown';
+  }
   document.addEventListener('click', function(e){
     var a = e.target.closest('a');
     if (!a || !a.href) return;
     var href = a.href;
     var pagePath = location.pathname;
+    var loc = getLinkLocation(a);
     if (href.indexOf('go.stoddgroup.com/widget/bookings/') !== -1) {
-      window.gtag('event', 'book_call_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+      window.gtag('event', 'book_call_click', { link_location: loc, page_path: pagePath, transport_type: 'beacon' });
     } else if (href.indexOf('utahinvestorhub.com') !== -1) {
-      window.gtag('event', 'visit_uih_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+      window.gtag('event', 'visit_uih_click', { link_location: loc, page_path: pagePath, transport_type: 'beacon' });
     } else if (href.indexOf('tel:') === 0) {
-      window.gtag('event', 'phone_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+      window.gtag('event', 'phone_click', { link_location: loc, page_path: pagePath, transport_type: 'beacon' });
     }
   }, { passive: true });
 })();

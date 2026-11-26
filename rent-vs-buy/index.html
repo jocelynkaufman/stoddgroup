@@ -554,17 +554,36 @@ Get My Full Breakdown + Free Down Payment Guide
 <script>
 (function(){
   if (typeof window.gtag !== 'function') return;
+  function getLinkLocation(a) {
+    var el = a;
+    while (el && el !== document.body) {
+      if (el.dataset && el.dataset.linkLocation) return el.dataset.linkLocation;
+      if (el.tagName === 'HEADER') return 'header_nav';
+      if (el.tagName === 'FOOTER') return 'footer';
+      if (el.id) {
+        var id = el.id.toLowerCase();
+        if (id === 'hero' || id.indexOf('hero') === 0) return 'hero';
+        if (id.indexOf('process') !== -1) return 'process_steps';
+        if (id.indexOf('faq') !== -1) return 'faq_cta';
+        if (id.indexOf('closing') !== -1 || id.indexOf('cta-band') !== -1) return 'closing_cta';
+      }
+      el = el.parentElement;
+    }
+    if (a.closest('article')) return 'article_body';
+    return 'unknown';
+  }
   document.addEventListener('click', function(e){
     var a = e.target.closest('a');
     if (!a || !a.href) return;
     var href = a.href;
     var pagePath = location.pathname;
+    var loc = getLinkLocation(a);
     if (href.indexOf('go.stoddgroup.com/widget/bookings/') !== -1) {
-      window.gtag('event', 'book_call_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+      window.gtag('event', 'book_call_click', { link_location: loc, page_path: pagePath, transport_type: 'beacon' });
     } else if (href.indexOf('utahinvestorhub.com') !== -1) {
-      window.gtag('event', 'visit_uih_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+      window.gtag('event', 'visit_uih_click', { link_location: loc, page_path: pagePath, transport_type: 'beacon' });
     } else if (href.indexOf('tel:') === 0) {
-      window.gtag('event', 'phone_click', { link_location: a.dataset.linkLocation || 'unknown', page_path: pagePath, transport_type: 'beacon' });
+      window.gtag('event', 'phone_click', { link_location: loc, page_path: pagePath, transport_type: 'beacon' });
     }
   }, { passive: true });
 })();
